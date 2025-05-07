@@ -1,0 +1,3698 @@
+[
+ {
+  "document": {
+   "authors": "Febin Seethi V",
+   "contact_info": "febin.seethi@causalitybiomodels",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "36280755.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CMO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cmo/cmo-20171030.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHF",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "REACTOME",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/reactome/reactome-20170911.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Neurotoxicity",
+      "Oxford-AstraZeneca COVID-19 vaccine",
+      "Pfizer/BioNTech",
+      "lipid damage",
+      "peak body temperature",
+      "protein damage"
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TimeLine",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "3-4 months post infection"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Type",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Long COVID"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Discussions",
+      "Full Text",
+      "Results"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Mol Psychiatry. 2023 Feb;28(2):564-578. doi: 10.1038/s41380-022-01836-9. Epub 2022 Oct 24.",
+       "ref": "36280755",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Disease": [
+        "COVID-19"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Disease_Type": [
+        "Long COVID"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "3-4 months post infection"
+       ]
+      }
+     },
+     {
+      "evidence": "The LC group was differentiated from controls by increased body temperature and CRP and lowered SpO2, Gpx and ANTIOX values."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CMO",
+         "name": "oxygen saturation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "BioAssay": [
+        "ELISA"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Moreover, the ANTIOX index was significantly lower in both patient groups as compared with controls and also in the total Long COVID group as compared with controls (F=17.46, df=1/154, p<0.001)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "We found that the total FF, HAMD and HAMA, somatic FF, HAMD and HAMA scores, depression HAMD and anxiety HAMA, as well as the autonomic and GIS symptoms, were significantly different between the three classes and increased from controls\u2192LC\u2192LC+O&NS."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Abnormal autonomic nervous system physiology"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Abnormality of the gastrointestinal tract"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Sleep disorders, chronic fatigue and cognitive disorders were significantly higher in Long COVID than in controls."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "sleep disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Chronic fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "cognitive disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "We found that 23.0% of the variance in the somatic HAMD score (regression #2) was explained by the cumulative effects of lowered Gpx and zinc, increased NO and CRP and vaccination with AstraZeneca or Pfizer."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "zinc ion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "OSTOX was associated with depression HAMD, NO with somatic HAMD HAMA and FF, MDA predicted somatic FF and OSTOX/ANTIOX predicted the neuropsychiatric symptoms."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "malonaldehyde"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Figure 3 shows the partial regression of serum CRP on PBT during the acute phase of COVID-19 (performed in Long COVID and control participants combined)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Serum"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "set": {
+       "Section": [
+        "Discussions"
+       ]
+      }
+     },
+     {
+      "evidence": "The current study\u2019s first major finding is that (a) Long COVID is associated with decreased ANTIOX, including Gpx, and a mild inflammatory process; and (b) 31.7% of Long COVID patients belong to a cluster characterized by decreased SpO2, antioxidant levels, zinc, and Gpx, and increased body temperature, CRP, and OSTOX (increased MPO, NOx, MDA, and (PCs))."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "malonaldehyde"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MPO"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Protein Carbonylation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CMO",
+         "name": "oxygen saturation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "zinc ion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "antioxidant"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Nevertheless, in the present study, we detected that the patient group with Long COVID showed increased CRP levels compared with control levels, indicating a mild inflammatory response."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Nonetheless, our study demonstrates that a persistent imbalance between oxidative stress toxicity and reduced ANTIOX is a key component of Long COVID and that increased aldehyde, neutrophil-associated MPO, protein carbonyl, and NO production are the major neurotoxic pathways, which, when combined with decreased ANTIOX, may have a variety of detrimental effects as reviewed before."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MPO"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Neurotoxicity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Protein Carbonylation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Neurotoxicity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Neurotoxicity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "malonaldehyde"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Neurotoxicity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Given that the Long COVID group as a whole showed Gpx deficiency, while only a subset of patients demonstrated oxidative damage, we may infer that Gpx deficiency is the main cause of the consequent lipid and protein damage."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "lipid damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "protein damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The second major finding of this study is that decreased SpO2 levels during the acute phase of COVID-19 significantly predict OSTOX, increased NO production, and decreased Gpx and ANTIOX, whereas increased PBT levels during the acute phase predict increased CRP and decreased zinc and antioxidant levels in Long COVID. As a result, both decreased SpO2 and higher body temperature contribute to Long COVID\u2019s increased OSTOX/ANTIOX ratio."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Low Blood Oxygen Saturation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Low Blood Oxygen Saturation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Low Blood Oxygen Saturation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Low Blood Oxygen Saturation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "zinc ion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Body Temperature"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "antioxidant"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "In addition, ~60% of the variance in the severity of the neuropsychiatric symptoms is explained by the cumulative effects of decreased SpO2 and increased PBT (thus, the severity of the acute infectious phase) coupled with increased CRP and OSTOX/ANTIOX ratio. Most notably was the impact of MDA and NO and decreased Gpx and zinc, although PCs and MPO, as well as decreased TAC, all contribute to neuropsychiatric symptoms."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "malonaldehyde"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "nitric oxide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "PFAM",
+         "name": "GSHPx"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "zinc ion"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "antioxidant activity"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Low Blood Oxygen Saturation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "peak body temperature"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CRP"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Most importantly, the results of our study show that chronic fatigue, depression and anxiety symptoms in Long COVID are all manifestations of the same core, which is strongly associated with OSTOX/ANTIOX and inflammatory signs."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Chronic fatigue"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Chronic fatigue"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Finally, it is also important to note that vaccinations with AstraZeneca (viral vector, genetically modified virus vaccine) and Pfizer (mRNA vaccine), but not Sinopharm (inactivated virus vaccine), may aggravate the neuropsychiatric symptoms and, in particular, the somatic symptoms of HAMA and HAMD."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Pfizer/BioNTech"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Pfizer/BioNTech"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Pfizer/BioNTech"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Oxford-AstraZeneca COVID-19 vaccine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "ADO",
+         "name": "Neuropsychiatric_symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Oxford-AstraZeneca COVID-19 vaccine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Oxford-AstraZeneca COVID-19 vaccine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anxiety disorder"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

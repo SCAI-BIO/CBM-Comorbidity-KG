@@ -1,0 +1,2093 @@
+[
+ {
+  "document": {
+   "authors": "Sutrishna Sen",
+   "contact_info": "sutrishna.sen@causlitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "33031735.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PATHWAY",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "CD68-positive macrophage",
+      "IBA1-positive macrophage",
+      "TMEM119-negative macrophage"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20200623.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Technique",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "autopsy",
+      "hematoxylin staining",
+      "hematoxylin-eosin staining",
+      "magnetic resonance imaging"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Severity",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "mild",
+      "mild to moderate",
+      "moderate",
+      "severe"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Lancet Neurol. 2020 Nov;19(11):919-929. doi: 10.1016/S1474-4422(20)30308-2. Epub 2020 Oct 5.",
+       "ref": "33031735",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "evidence": "Cause of death was mainly attributed to the respiratory system, with  viral pneumonia as the underlying condition in most cases(table)."
+     },
+     {
+      "set": {
+       "Disease": [
+        "COVID-19"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "viral pneumonia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease"
+      ]
+     },
+     {
+      "evidence": "The mean weight of the unfixed brains was 1302 g(SD 171; median 1270 g  [1195\u20131438]; range 950\u20131665; table) with 23 patients (53%) showing  signs of mild to moderate brain oedema, commonly seen as unspecific  agonal changes."
+     },
+     {
+      "set": {
+       "Disease_Severity": [
+        "mild to moderate"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "brain edema"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease_Severity"
+      ]
+     },
+     {
+      "evidence": "Arteriosclerosis of the basal vessels was mild in 12 (28%) patients,  moderate in 22 (51%), and severe in nine (21%; table)."
+     },
+     {
+      "set": {
+       "Disease_Severity": [
+        "mild",
+        "moderate",
+        "severe"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "arteriosclerosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease_Severity"
+      ]
+     },
+     {
+      "evidence": "13 brains (30%) showed gross macroscopic abnormalities (fresh  territorial ischaemic lesions in six patients, older territorial  ischaemic lesions in five patients, grey matter heterotopia in one  patient with trisomy 21, and cerebellar metastasis of a non-small cell  lung carcinoma in one patient; table)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "ischemia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "ischemia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Lesion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Gray Matter"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHDisease": [
+        "Down Syndrome"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Heterotopia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHDisease"
+      ]
+     },
+     {
+      "set": {
+       "MeSHDisease": [
+        "Carcinoma, Non-Small-Cell Lung"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Cerebellum"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Neoplasm Metastasis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHDisease"
+      ]
+     },
+     {
+      "evidence": "Six (14%) patients had fresh ischaemic infarctions: three in the  territory of the posterior cerebral artery, two in the territory of  the anterior cerebral artery, and one in the territory of the middle  cerebral artery, which were most likely due to thromboembolic events."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "posterior cerebral artery infarction"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "anterior cerebral artery infarction"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "middle cerebral artery infarction"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "A highly variable degree of astrogliosis was seen in all patients,  with 37 patients (86%) showing astrogliosis in all assessed regions."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Astrocytosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Diffuse activation of microglia, with occasional microglial  nodules,was pronounced in the brainstem and cerebellum. Additionally,  we found distinct positive staining for HLA-DR in subpial and  subependymal regions, a pattern not commonly observed in classic  encephalitis."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain Stem",
+        "Cerebellum"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Parenchymal and perivascular microglia expressed the lysosomal marker  CD68 while retaining the microglia core marker TMEM119 on their  surfaces (figures 1, 2; appendix p 5)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Parenchymal Tissue"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Anatomy": [
+        "perivascular space"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "cell_surface_expression"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "CD68"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "cell_surface_expression"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TMEM119"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Anatomy"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Expression of ACE2 was highest in oligodendrocytes, while TMPRSS2 and  TMPRSS4 were highest in neurons, CTSL was highest in microglia, and  TPCN2 was highest in astrocytes (figure 3)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Oligodendroglia"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neurons"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TMPRSS2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TMPRSS4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Microglia"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CTSL"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Astrocytes"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TPCN2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Cytotoxic T lymphocytes could be seen in small amounts(up to 49 cells  per HPF) in the frontal cortex and basal ganglia, but their presence  was more pronounced in the brainstem, where they were mostly  concentrated in perivascular regions but were also observed in the  parenchyma as clusters in close vicinity to IBA-1-positive microglia  (figures 1, 4)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain Stem",
+        "Parenchymal Tissue"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "T-Lymphocytes, Cytotoxic"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Infiltration of the meningeal compartments by cytotoxic T lymphocytes  was seen in 34 (79%) patients (moderate in six patients and mild in 28  patients; table, figure 4), with an enrichment of IBA-1-postive,  CD68-positive, and TMEM119-negative perivascular and meningeal  macrophages (figure 2)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "T-Lymphocytes, Cytotoxic"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Meninges"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Meninges"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "IBA1-positive macrophage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "CD68-positive macrophage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "TMEM119-negative macrophage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "The olfactory bulb showed a high degree of astrogliosis and  microgliosis, but only minor infiltration by cytotoxic T  lymphocytes(figures 1, 4)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Olfactory Bulb"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Astrocytosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Microgliosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Cases 2, 16, 21, and 41 showed more brainstem inflammation(in terms of  infiltration by cytotoxic CD8-positive T cells or activation of  microglia) than all others (figure 4)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain Stem"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Inflammation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "T-Lymphocytes, Cytotoxic"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Meninges"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

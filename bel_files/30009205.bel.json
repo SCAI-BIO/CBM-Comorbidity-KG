@@ -1,0 +1,1015 @@
+[
+ {
+  "document": {
+   "authors": "Febin Seethi V",
+   "contact_info": "febin.seethi@causalitybiomodels",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "30009205.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHF",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "population_type",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Japanese"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Ann Clin Transl Neurol. 2018 May 31;5(7):870-875. doi: 10.1002/acn3.580.",
+       "ref": "30009205",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHDisease": [
+        "Parkinson Disease"
+       ]
+      }
+     },
+     {
+      "evidence": "Of the six categories of immunosuppressants, two were clearly associated with a lower risk of PD: Corticosteroids (RR = 0.80; 95% CI 0.77\u20130.83) and IMDH inhibitors (RR = 0.64; 95% CI 0.51\u20130.79)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "corticosteroid"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "EC 1.1.1.205 (IMP dehydrogenase) inhibitor"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The other classes of immunosuppressants were not as clearly inversely associated with PD risk, although those taking methotrexate had a borderline lower risk of PD (RR = 0.84; 95% CI 0.74\u20130.95)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "methotrexate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "When we considered medications within the IMDH inhibitor category, each was consistently associated with a lower risk of PD. Mycophenolate was associated with the lowest risk of PD (RR = 0.55; 95% CI 0.31\u20130.98), although the number of patients taking this drug was small, and the CIs were relatively wide."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "EC 1.1.1.205 (IMP dehydrogenase) inhibitor"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "mycophenolate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "mycophenolate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "is_a"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "EC 1.1.1.205 (IMP dehydrogenase) inhibitor"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Within the corticosteroid category, the steroids most strongly associated with PD were those used commonly for long-term immunosuppression: Prednisone (RR = 0.81; 95% CI 0.78\u20130.85); dexamethasone (RR = 0.76; 95% CI 0.66\u20130.88); methylprednisolone (RR = 0.80; 95% CI 0.76\u20130.84)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "prednisone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "dexamethasone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "meprednisone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "prednisone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "is_a"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "corticosteroid"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "dexamethasone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "is_a"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "corticosteroid"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "meprednisone"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "is_a"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "corticosteroid"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "For those taking both a corticosteroid and an IMDH inhibitor, risk of PD was 0.53 (95% CI 0.40\u20130.70) in the unlagged model and 0.60 (95% CI 0.42\u20130.84) in the 12-month lagged model."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "EC 1.1.1.205 (IMP dehydrogenase) inhibitor"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "corticosteroid"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Parkinson's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHDisease"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

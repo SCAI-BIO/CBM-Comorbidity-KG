@@ -1,0 +1,4202 @@
+[
+ {
+  "document": {
+   "authors": "Febin Seethi V",
+   "contact_info": "febin.seethi@causalitybiomodels",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "37798476.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CELL",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHF",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Fibrotic remodeling",
+      "acute and fibrinous organizing pneumonia",
+      "diffuse alveolar damage",
+      "hyaline membrane formation",
+      "long COVID",
+      "microangiopathy",
+      "microischaemia",
+      "microthrombi",
+      "multiorgan dysfunction",
+      "nutrient transport",
+      "perivascular oedema",
+      "secondary pulmonary lobular microischaemia",
+      "vascular insufficiency"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Discussions",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_anatomy",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "extrapulmonary organs"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Specimen",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "post-mortem specimen"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Nat Microbiol. 2023 Nov;8(11):1986-1994. doi: 10.1038/s41564-023-01488-7. Epub 2023 Oct 5.",
+       "ref": "37798476",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Review"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Full Text"
+       ]
+      }
+     },
+     {
+      "evidence": "Studies employing Syrian hamsters exhibit often mild to moderate disease courses with a pulmonary pathology resembling COVID-19, that is, respiratory tract and lung pathology, alveolar and perivascular oedema and endotheliitis."
+     },
+     {
+      "set": {
+       "Species": [
+        "10036"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Respiratory Tract Diseases"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Pulmonary Alveoli"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Edema"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "Anatomy": [
+        "perivascular space"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Edema"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Anatomy"
+      ]
+     },
+     {
+      "set": {
+       "Cell": [
+        "endothelial cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "evidence": "As early as May 2020, venous thromboembolism was identified as a major complication of COVID-19 (ref. 11), prompting international randomized controlled trials on the coagulation management of patients with COVID-19 (ref. 12)."
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Venous Thromboembolism"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Extensive autopsy studies have revealed the leading causes of death in patients undergoing severe and critical COVID-19: respiratory failure (53%) and multiorgan dysfunction."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "respiratory failure"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Multiple Organ Failure"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "respiratory failure"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "multiorgan dysfunction"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "For example, acute respiratory distress syndrome (ARDS) was described as the leading cause of death in COVID-19 based on microscopic examination of the lungs of deceased patients. Changes were observed resembling those of diffuse alveolar damage (DAD), the hallmark of ARDS."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "adult respiratory distress syndrome"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "adult respiratory distress syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "adult respiratory distress syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The exact mechanism underlying the induction of ARDS by SARS-CoV-2 remains unclear, but it has been proposed to be a consequence of hyperinflammatory conditions in the lungs associated with the presence of viral RNA."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "adult respiratory distress syndrome"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "In detail, DAD is a multi-stage process with three major phases: exudative, proliferative and fibrotic. These stages can be observed in the lungs of COVID-19 autopsies."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Specimen": [
+        "post-mortem specimen"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Specimen"
+      ]
+     },
+     {
+      "evidence": "The initial exudative phase is characterized by hyaline membrane formation (deposits along the alveolar walls composed of fibrin, mucopolysaccharides and cell debris), cell death, pulmonary oedema and inflammation."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "hyaline membrane formation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cell death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "perivascular oedema"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Proliferative-phase DAD shows interstitial lymphocytic infiltrates, squamous metaplasia (replacement of alveolar epithelium with squamous epithelium), syncytial multinucleated giant cells (fusions of uninuclear cells such as monocytes and/or macrophages or epithelial cells) and reactive type II pneumocyte (AT2) hyperplasia (reactive proliferation of a specific type of pulmonary epithelial cell.)"
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Lymphocytic Infiltrate"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Squamous Metaplasia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CELL",
+         "name": "type II pneumocyte"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Although the exact link between viral infections and ARDS is not fully understood, certain alterations can be attributed to direct viral cytopathic effects, in particular, syncytial multinucleated giant cells and reactive AT2 hyperplasia."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CELL",
+         "name": "type II pneumocyte"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Besides DAD, acute and fibrinous organizing pneumonia (AFOP) \nhas been reported as a rare condition in patients with COVID-19 and is \nassociated with poor prognosis."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "acute and fibrinous organizing pneumonia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "diffuse alveolar damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": " AFOP may represent a form of lung injury distinct from typical ARDS. It may be related to microvascular injury and inflammation, and it is associated with a hypercoagulable state and microvascular thrombosis in the \nlungs."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "acute and fibrinous organizing pneumonia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Hypercoagulability"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung",
+        "Microvessels"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "thrombosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Other studies have investigated lung damage in depth by employing imaging flow-cytometry approaches, and have revealed that SARS-CoV-2 primarily infects alveolar epithelial cells. It is here that a local hyperinflammatory cell state is induced, predominantly mediated by macrophages."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Alveolar Epithelial Cells",
+        "Lung"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "macrophage activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "macrophage activation"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "These data revealed the loss of alveolar type I (AT1) and AT2 cells and the aberrant activation of monocyte-derived macrophages and alveolar macrophages in the lungs with a specific cytokine profile."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CELL",
+         "name": "type I pneumocyte"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CELL",
+         "name": "type II pneumocyte"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "macrophage activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Independent studies have shown that SARS-CoV-2 can infect blood monocytes through an antibody-opsonized virus, which in turn may lead to inflammasome \nactivation and systemic inflammation."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Blood"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "monocyte"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "complex"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "inflammasome complex"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "complex"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "inflammasome complex"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Others have shown opposing monocyte and macrophage immune profiles, further aggravating immune dysregulation."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Immune dysregulation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Fibrotic remodelling in the lungs occurs at late disease stages and in a prolonged disease course."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Fibrotic remodeling"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Recent investigations in human autopsy lung tissue showed that vascular insufficiency (compromised pulmonary and bronchial circulation) and secondary pulmonary lobular microischaemia (vascular insufficiency causing microischaemia of secondary lung lobules) precede the fibrotic changes."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Specimen": [
+        "post-mortem specimen"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "vascular insufficiency"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "Anatomy": [
+        "secondary pulmonary lobule"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "microischaemia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "vascular insufficiency"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Fibrotic remodeling"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "secondary pulmonary lobular microischaemia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Fibrotic remodeling"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Specimen"
+      ]
+     },
+     {
+      "evidence": "Fibrotic remodelling and the associated impairment of lung function could also contribute to long COVID."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Fibrotic remodeling"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Autopsy studies reported high frequencies of thromboembolisms in COVID-19 deceased early in the pandemic. In line with this, vascular damage within and outside the lungs is now a recognized hallmark of severe COVID-19."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Thromboembolism"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Vascular System Injuries"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "COVID-19 autopsy lungs revealed endothelial injury, microangiopathy (injury of capillaries with thickening and weakening of the vessel walls) and intussusceptive angiogenesis (an aberrant blood vessel neoformation), and perivascular inflammation."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Specimen": [
+        "post-mortem specimen"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "endothelial cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Lung Injury"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "microangiopathy"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "intussusceptive angiogenesis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "In addition to changes to the endothelium, autopsy tissues showed increased microthrombi in both venous and arterial vessels and multifocal acute infarctions."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Arteries",
+        "Veins"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "microthrombi"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Investigating viral tropism using autopsies revealed high viral copy \nnumbers in the lung compared to relatively low copy numbers in all other organs examined."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "viral genome replication"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "In the literature, viraemia is not only predictive of patient survival but is also associated with worse respiratory disease severity, increased markers of inflammation, and increased pulmonary viral RNA load."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viremia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Survival"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viremia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Respiratory Tract Diseases"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viremia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Lung"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viremia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Load"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Autopsy studies also identified the kidney as another site of COVID-19-related complications, with ~30\u201350% of hospitalized and critically ill COVID-19 patients developing acute kidney injury."
+     },
+     {
+      "set": {
+       "Specimen": [
+        "post-mortem specimen"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Kidney"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Acute Kidney Injury"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "In autopsy specimens, renal histomorphological alterations include acute tubular necrosis, thrombotic microangiopathy, interstitial inflammation and fibrosis."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Acute tubular necrosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Thrombotic Microangiopathy"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "interstitial nephritis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "renal fibrosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "In line with this, microscopic evaluations of the hearts of deceased patients revealed features consistent with pre-existing hypertensive or atherosclerotic disease."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Heart"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "atherosclerosis"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "hypertension"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The latter are associated with SARS-CoV-2-dependent coagulation activation extending to the myocardium, or ACE2-mediated damage caused by low to moderate viral RNA loads in the heart."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Load"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "blood coagulation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "cell and tissue damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "cell and tissue damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Specimen"
+      ]
+     },
+     {
+      "evidence": "About 30% of patients with COVID-19, including those with mild \ndisease, display neurological symptoms such as an altered mental \nstatus, dizziness and headache, and, in rare cases, brain ischaemia."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Mental Disorders"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Dizziness"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Headache"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "brain ischemia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Histopathological changes in the brain include the recruitment of immune cells and immune activation in the brain stem and olfactory bulbs, as well as in the choroid plexus and the blood\u2013brain barrier, including vascular alterations."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Blood-Brain Barrier",
+        "Brain Stem",
+        "Choroid Plexus",
+        "Olfactory Bulb"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cellular extravasation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "leukocyte activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Anatomy"
+      ]
+     },
+     {
+      "evidence": "Interestingly, COVID-19-induced cytokines alone were shown to be sufficient for significant disturbances to the neuronal expression signature in the absence of detectable SARS-CoV-2."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cytokine production"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "ACE2 and cellular proteases, such as TMPRSS2, have been identified as receptors and priming factors for SARS-CoV-2."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TMPRSS2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The most recent autopsy related to Lassa virus infection was published 40 years ago62, although 100,000 to 300,000 infections are estimated to occur annually, with case fatality rates ranging from 15% to 70% (ref. 63). Clinical manifestations of this fatal disease can include acute kidney injury, neurological complications and haemorrhage."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Lassa fever"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Acute Kidney Injury"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Lassa fever"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Neurological Signs and Symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Lassa fever"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Hemorrhage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Moreover, and in analogy to long COVID, it has been noted that survivors of acute Ebola virus infection suffer from a range of long-term sequelae, including an increased risk of intermediate-term death and increased prevalence \nof renal dysfunction."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Ebola hemorrhagic fever"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Ebola hemorrhagic fever"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Abnormal renal physiology"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "Disease"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

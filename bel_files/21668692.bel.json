@@ -1,0 +1,648 @@
+[
+ {
+  "document": {
+   "authors": "Sutrishna Sen",
+   "contact_info": "sutrishna.sen@causlitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "21668692.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PATHWAY",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CMO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cmo/cmo-20171030.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Parkinson's disease-like symptoms"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20200623.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Condition",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "previous influenza infections"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_Disease",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Parkinson's disease-like symptoms"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Influenza Other Respir Viruses. 2011 Sep;5(5):328-33. doi: 10.1111/j.1750-2659.2011.00232.x.",
+       "ref": "21668692",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "evidence": "While there was no evidence for an increase in the risk of developing \\\nPD in relation to an increasing number of influenza attacks prior to \\\nthe index date, the risk of developing PS was statistically \\\nsignificantly increased (OR 2.00, 95% CI 1.45\u20132.75) for patients with \\\nthree or more recorded influenza infections prior to the index date, \\\nas compared to those with no recorded infection (Table 2)."
+     },
+     {
+      "set": {
+       "Disease_Condition": [
+        "previous influenza infections"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "influenza"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Parkinson's disease-like symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "For patients with PS, the OR was also highest for those with a recent \\\ninfluenza infection (1\u201329 days ago; OR 3.03, 95% CI 1.94\u20134.74,P < \\\n0.0001); the risk decreased gradually to 1.20 (95% CI 1.12\u20131.29, P < \\\n0.0001) for those with a last influenza infection recorded more than 2 \\\nyears ago (Table 2)"
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "influenza"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Parkinson's disease-like symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "On the other hand, the OR of developing PS was 1.45 (95% CI 1.25\u20131.68, \\\nP < 0.0001) for patients with one or more previous influenza \\\ninfections with complications, as compared to those with no recorded \\\ninfection, and it was particularly high for patients who had such an \\\ninfection within 30 days prior to the diagnosis of a PS (OR 5.30, 95% \\\nCI 1.83\u201315.3, P < 0.01) (Table 2)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "influenza"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Parkinson's disease-like symptoms"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease_Condition"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

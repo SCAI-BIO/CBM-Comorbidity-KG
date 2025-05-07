@@ -1,0 +1,2749 @@
+[
+ {
+  "document": {
+   "authors": "Sutrishna Sen",
+   "contact_info": "sutrishna.sen@causlitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "33360731.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "endothelial cell mummification",
+      "focal basement membrane duplication",
+      "microthrombus",
+      "perivascular edema"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_CellLine",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "HUVEC cell line",
+      "NSC-34"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Mouse_Strain",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "C57BL/6"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Age",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "9 months"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Concentration",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "350 ng/ ml",
+      "70 ng/ ml"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Technique",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Hematoxylin and eosin staining"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Ann Diagn Pathol. 2021 Apr:51:151682. doi: 10.1016/j.anndiagpath.2020.151682.",
+       "ref": "33360731",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "evidence": "The hematoxylin and eosin findings revealed two differences: 1) Microvessels of the brain of COVID-19 patients showed perivascular edema as defined by a zone of edema at least 50 \u03bcm in size around a capillary. 2) Less commonly, microvessels in the COVID-19 cases had endothelial cells that were degenerated, mummified, and detached, showed focal basement membrane duplication, and/or microthrombi."
+     },
+     {
+      "set": {
+       "Technique": [
+        "Hematoxylin and eosin staining"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Microvessels"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "perivascular edema"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "Cell": [
+        "endothelial cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "degradation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "MESH",
+           "name": "Endothelial Cells"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "endothelial cell mummification"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cell adhesion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "focal basement membrane duplication"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "microthrombus"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Technique"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "The data presented in Table 1 highlights the significant association between each cytokine and SARS CoV-2 protein detection in the microvessels (each p < 0.001)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Microvessels"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "endothelial cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "IL6"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TNF"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "In comparison, the percentage of neurons with detectable MFSD2A decreased significantly (p < 0.001) in the COVID-19 brains (Table 1) (Fig. 2)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Neurons"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MFSD2A"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "As seen in Table 1, there was a significant decreased expression of SHIP1 in the COVID-19 brain tissues (p value <0.001) (Fig. 2)"
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "INPP5D"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "NMDAR2 was not detected in the normal brain tissues. It was expressed in the COVID-19 brains where it was evident in neurons adjacent to SARS-CoV-2 positive microvessels (Table 1 and Fig. 2)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "GRIN2A"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "GRIN2B"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "GRIN2C"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "GRIN2D"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Similarly, the percentage of neurons with nNOS was significantly greater (p < 0.001) in the COVID-19 brain tissues compared to the controls (Table 1 and Fig. 2)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "NOS1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "evidence": "Macroscopic changes included increased adhesion and degeneration of the HUVEC cells and degeneration in the MN1 cell lines."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "HUVEC cell line"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cell adhesion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "NSC-34"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "Increasing the concentration of S1 spike protein from 70 to 350 ng/ ml resulted in increased HUVEC cell degeneration and adhesion, as well as a significant increase in the % of cells with the spike subunit and caspase-3 (Table 2 and Fig. 3)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "HUVEC cell line"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Concentration": [
+        "350 ng/ ml"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cell adhesion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CASP3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Concentration"
+      ]
+     },
+     {
+      "evidence": "As seen in Table 2, the % of cells with identifiable spike subunit or caspase-3 was significantly less than for the full length S1 subunit (p < 0.001)."
+     },
+     {
+      "set": {
+       "Concentration": [
+        "70 ng/ ml"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CASP3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Concentration"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "The mice injected with the S2 subunit showed no behavioral changes; the mice injected with the S1 subunit had significantly increased thirst (consumed 11 g of hydrogel/mouse at day 1 versus 3 g/mouse for sham injected) and showed stress related behavior that included eating the plastic support in their cages."
+     },
+     {
+      "set": {
+       "Species": [
+        "10090"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Mouse_Strain": [
+        "C57BL/6"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Gender": [
+        "Female"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Age": [
+        "9 months"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Thirst"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Stress, Psychological"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The mice treated with the full length S1 subunit showed the viral protein primarily in the brain, subcutaneous fat of the skin, and liver. Over 90% of S1 spike positive cells were endothelia in microvessels (Fig. 4)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Proteins"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Brain"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Proteins"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Subcutaneous Fat"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Proteins"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Liver"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "ACE2 analyses by immunohistochemistry showed that the three organs with the strongest expression in the microvessels were the skin/subcutaneous fat, brain, and liver."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Liver",
+        "Microvessels",
+        "Skin"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Ace2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Endothelial cell damage, with increased caspase-3, as well as TNF\u03b1, IL6, and C5b-9 expression, was seen in the microvessels of the skin and brain in the mouse model with co-localization with the S1 spike protein (Fig. 4)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Microvessels",
+        "Skin"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Casp3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Il6"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Tnf"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "The mice treated with the truncated S1 subunit showed scattered cells positive for this spike protein but not in the endothelia. Rather, the viral protein was seen in cells in the brain and liver that had the morphology of macrophages and microglia, respectively."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Proteins"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Brain"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "319_541",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Viral Proteins"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Liver"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Only the mice treated with the full length S1 subunit showed a significant increase in caspase-3, IL6, C5b-9, and TNF\u03b1 in the brain."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Casp3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Il6"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Tnf"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Note the significant decrease in MFSD2a and increase in nNOS in the mice brains exposed to the full length S1 subunit, but not in the other mice (Table 1 and Fig. 4) (p < 0.001)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Mfsd2a"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "16_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "MGI",
+         "name": "Nos1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Age"
+      ]
+     },
+     {
+      "unset": [
+       "Gender"
+      ]
+     },
+     {
+      "unset": [
+       "Mouse_Strain"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,4288 @@
+[
+ {
+  "document": {
+   "authors": "Sutrishna Sen",
+   "contact_info": "sutrishna.sen@causalitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "37458167.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PATHWAY",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CMO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cmo/cmo-20171030.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Chronic Cough",
+      "common respiratory viruses",
+      "long COVID",
+      "neural circuit dynamics",
+      "neuronal injury",
+      "post-acute infection syndrome"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20200623.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Timeline",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "6 months after acute COVID",
+      "6 months after acute infection"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Age",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "70 years and above",
+      "aging population",
+      "older than 65 years"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_anatomy",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Subcortical region"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_Disease",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Long COVID",
+      "developed encephalopathy during acute infection",
+      "short-term SARS-CoV-2 infection"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Severity",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "severe"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Condition",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "acute"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Dis Model Mech. 2023 Jul 1;16(7):dmm050049. doi: 10.1242/dmm.050049.",
+       "ref": "37458167",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Review"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Full Text"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "evidence": "SARS-CoV-2 infection occurs when the virus spike (S) protein binds to the zinc metalloproteinase angiotensin-converting enzyme 2 (ACE2) at the host cell membrane (Hoffmann et al., 2020a; Lan et al., 2020; Shang et al., 2020a; Wan et al., 2020) (Fig. 2)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Cell Membrane"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "ACE2"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Alternatively, in the non-endosomal pathway, the primary activation is based on the cleavage of S protein by the cellular transmembrane serine protease 2 (TMPRSS2) (Koch et al., 2021) and subsequent spike cleavage by the endonuclease furin (Bestle et al., 2020; Shang et al., 2020b)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TMPRSS2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "?",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "FURIN"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "?",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Additionally, in cells with low ACE2 expression, viral infection can be enhanced by additional host factors, such as the extracellular protease BSG (also known as CD147), the transmembrane receptor NRP1 (Cantuti-Castelvetri et al., 2020), lectins (Lempp et al., 2021), or HAVCR1 phosphatidylserine receptors such TIM-1 (also known as TIMELESS) and AXL (Bohan et al., 2021; Wang et al., 2021b)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "BSG"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "NRP1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Lectins"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "HAVCR1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TIMELESS"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AXL"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Studies based on publicly available transcriptome databases revealed that one of the most likely enhancers of direct viral infection in the brain is NRP1, which is highly expressed in multiple neuron and glial cell types, including astrocytes and microglia (Cantuti-Castelvetri et al., 2020; Daly et al., 2020; Lonsdale et al., 2013)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Astrocytes",
+        "Brain",
+        "Microglia",
+        "Neurons"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "NRP1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Recently, the extracellular proteases BSG and DPP4 have also been identified as additional entry receptors for SARS-CoV-2 on astrocytes, providing new detail on the neuropathogenesis of COVID-19 (Andrews et al., 2022; Wang et al., 2020) (Fig. 2)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Astrocytes"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "BSG"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "viral entry into host cell"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "DPP4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "viral entry into host cell"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Postmortem analyses of COVID-19 patients' brain tissue revealed T-cell infiltration and microglial activation, and injured neurons and astrocytes (Kanberg et al., 2020; Schwabenland et al., 2021)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "T-Lymphocytes"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Brain"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Astrocytes",
+        "Brain",
+        "Neurons"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Injury"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Despite the difficulties in adequate diagnosis, long COVID includes a combination of multifactorial symptoms such as fatigue, dyspnea, persistent cough, chest pain, persistent headache, memory and cognitive impairment, muscle aches, loss of smell or taste, depression and/or anxiety (Davis et al., 2023; de Erausquin et al., 2021; Lechien et al., 2020; Vos et al., 2022)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Dyspnea"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Chronic Cough"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Chest Pain"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Headache Disorders"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Memory impairment"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Cognitive impairment"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Myalgia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Anosmia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Ageusia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Anxiety"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Some long COVID patients report persistent symptoms 6 months after acute infection, most commonly dyspnea and a diverse array of neurological problems (Box 1, Fig. 1)."
+     },
+     {
+      "set": {
+       "Timeline": [
+        "6 months after acute infection"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Dyspnea"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Abnormality of nervous system physiology"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "For example, a meta-analysis of ~10,000 COVID-19 studies revealed the persistence of headache in between 8% and 15% of patients in the first 6 months after SARS-CoV-2 infection (Fern\u00e1ndez-de-las-Pe\u00f1as et al., 2021), and two independent patient cohort studies reported partial taste and smell disorders in 40% of patients (Lechien et al., 2020; Leedman et al., 2021)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Headache"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Hypogeusia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Anosmia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "evidence": "A similar meta-analysis also revealed that patients of 70 years and above are at higher risk of long COVID, although it is not exclusive to adults (Sudre et al., 2021)."
+     },
+     {
+      "set": {
+       "Age": [
+        "70 years and above"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "aging"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Age"
+      ]
+     },
+     {
+      "evidence": "Along with female sex and older age, low socioeconomic status, smoking, obesity and a large panel of other comorbidities, i.e. chronic obstructive pulmonary disease, prostatic hyperplasia, fibromyalgia, depression or multiple sclerosis, among others, have also been associated with a higher long-term risk of long COVID (Subramanian et al., 2022; Thompson et al., 2022)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Age"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Socioeconomic Factors"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Smoking"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "chronic obstructive pulmonary disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Prostatic Hyperplasia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "fibromyalgia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "mental depression"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "amyotrophic lateral sclerosis"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The most frequently reported manifestations of long COVID are neurological symptoms (hereafter, nLong COVID), which include headache, confusion and \u2018brain fog\u2019, mood disorders and dementia(Fig. 3)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Headache"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Confusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Mental Fatigue"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Mood Disorders"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "long COVID"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "dementia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "A recent study showed that the cytokine CCL11 (eotaxin-1) remains elevated in long COVID patients suffering from brain fog, and high levels of CCL11 have been associated with demyelination of oligodendrocytes and activation of hippocampal microglia (Fern\u00e1ndez-Casta\u00f1eda et al., 2022)."
+     },
+     {
+      "set": {
+       "Custom_Disease": [
+        "Long COVID"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Mental Fatigue"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CCL11"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "Cell": [
+        "oligodendrocyte"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CCL11"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Demyelination"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Hippocampus"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CCL11"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_Disease"
+      ]
+     },
+     {
+      "evidence": "Beyond nLong COVID itself, there is concern about an increased risk of dementia as a longer-term consequence of COVID-19. A number of viruses, including common respiratory viruses, cause post-acute infection syndromes (Choutka et al., 2022), with a significant number of patients developing long-term neurological sequelae, including neurodegenerative multiple sclerosis (Bjornevik et al., 2022; Cermelli and Jacobson, 2000)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "dementia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "common respiratory viruses"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "post-acute infection syndrome"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "common respiratory viruses"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "multiple sclerosis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Researchers have observed a significant and progressive reduction in COVID-19 patients\u2019 gray matter in the parahippocampal gyrus, the entorhinal cortex and the hippocampus after SARS-CoV-2 infection (Di Stadio et al., 2022; Douaud et al., 2022; Griffanti et al., 2021). These regions relate to olfaction and memory function."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Entorhinal Cortex",
+        "Hippocampus",
+        "Parahippocampal Gyrus"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Gray Matter"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "olfactory behavior"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "memory"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Accordingly, the risk of being diagnosed with dementia is increased in the 6 months after acute COVID. In the general population, the risk is 0.7% higher, and it rises to 2.7% in patients older than 65 years and to 4.7% in those who have developed encephalopathy during acute infection (Taquet et al., 2021)."
+     },
+     {
+      "set": {
+       "Disease_Condition": [
+        "acute"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "6 months after acute COVID"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "dementia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "set": {
+       "Age": [
+        "older than 65 years"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "dementia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Age"
+      ]
+     },
+     {
+      "set": {
+       "Custom_Disease": [
+        "developed encephalopathy during acute infection"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "dementia"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_Disease"
+      ]
+     },
+     {
+      "evidence": "First, the most severely hit population by COVID-19 is the age group of 65 years and above (WHO World Health Statistics, 2023), with an increased risk of poor outcome for those with dementia (Numbers et al., 2021)."
+     },
+     {
+      "set": {
+       "Age": [
+        "older than 65 years"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHDisease": [
+        "Dementia"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Death"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHDisease"
+      ]
+     },
+     {
+      "unset": [
+       "Age"
+      ]
+     },
+     {
+      "evidence": "Indeed, carrying the Alzheimer\u2019s disease risk allele APOE \u025b4 (Kuo et al., 2020; Wang et al., 2021c) or being of an advanced age (Gonz\u00e1lez-Garc\u00eda et al., 2021) increase the risk of severe COVID-19."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "APOE"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "Disease_Severity": [
+        "severe"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "APOE"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "aging"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease_Severity"
+      ]
+     },
+     {
+      "evidence": "Conversely, COVID-19 patients with pre-existing neurological syndromes such as Guillain\u2013Barr\u00e9 syndrome exhibit impairment in amyloid processing along with increased biomarkers of neurodegenerative diseases in their cerebrospinal fluid (CSF), including neuroinflammatory cytokines, glial fibrillary acidic protein and neuronal injury markers (Guasp et al., 2022; Jarius et al., 2022; Kanberg et al., 2020; Pilotto et al., 2021; Ziff et al., 2022; Visser et al., 2022 preprint)."
+     },
+     {
+      "set": {
+       "Disease": [
+        "COVID-19"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Guillain-Barre syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "amyloid-beta metabolic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Guillain-Barre syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cytokine production involved in inflammatory response"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Guillain-Barre syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "GFAP"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neurons"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Guillain-Barre syndrome"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Injury"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Moreover, an increase in soluble ACE2 levels has been detected in patients with cardiovascular and inflammatory conditions, in those with COVID-19 and in the aging population, indicating convergence to the ACE2\u2013renin\u2013angiotensin system (Batlle et al., 2022; Verdecchia et al., 2020). "
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "cardiovascular system disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "inflammatory response"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Second, the increased levels of cytokines and chemokines, such as CCL11, upon acute COVID infection are sufficient to induce long-lasting reactivity of white matter microglia in the subcortical and hippocampal regions, compatible with the pathophysiology of cognitive impairment (Etter et al., 2022; Fern\u00e1ndez-Casta\u00f1eda et al., 2022)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Hippocampus",
+        "White Matter"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_anatomy": [
+        "Subcortical region"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CCL11"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_anatomy"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "The reduction in myelinating oligodendrocytes causes loss of myelin and, ultimately, alters cognitive function and neural circuit dynamics (Steadman et al., 2020)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oligodendroglia"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "myelination"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Demyelination"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "cognition"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "NCIT",
+         "name": "Demyelination"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "neural circuit dynamics"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Yet, common phenotypes emerge upon analysis of short-term SARS-CoV-2 infection in brain organoids, including increased apoptosis, increased oxidative stress in neurons, myelin disregulation and synapsis loss due to microglial activation (Mesci et al., 2022; Samudyata et al., 2022; Song et al., 2021a)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Neurons",
+        "Organoids"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_Disease": [
+        "short-term SARS-CoV-2 infection"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "neuron apoptotic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Oxidative Stress"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "regulation of myelination"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "synapsis"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "microglial cell activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_Disease"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Interestingly, SARS-CoV-2 infection in brain organoids increased the number of reactive astrocytes adjacent to infected ones, increasing neuronal cell death in the vicinity probably due to a local inflammatory reaction (Andrews et al., 2022) (Fig. 4)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Organoids"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "neuron apoptotic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "astrocyte activation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "SARS-CoV-2 infection triggers cellular changes in the brain compatible with the progression of neurodegeneration (Heneka et al., 2020; Yang et al., 2021), which was recapitulated in brain organoid models of acute infection."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "COVID-19"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "HP",
+         "name": "Neurodegeneration"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Disease"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

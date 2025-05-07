@@ -1,0 +1,309 @@
+##################################################################################
+SET DOCUMENT Name = "30342839.bel"
+SET DOCUMENT Authors = "Febin Seethi V"
+SET DOCUMENT ContactInfo = "febin.seethi@causalitybiomodels"
+SET DOCUMENT Description = "COMMUTE-WP4-BEL_curation"
+
+SET DOCUMENT Licenses = "Private Ownership to Fraunhofer Institute SCAI"
+SET DOCUMENT Copyright = "Copyright © 2024 Fraunhofer Institute SCAI, All rights reserved"
+SET DOCUMENT Version = "2.0"
+
+##################################################################################
+# NAMESPACES Section
+##################################################################################
+
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns"
+DEFINE NAMESPACE PW AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns"
+DEFINE NAMESPACE NCIT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns"
+DEFINE NAMESPACE HGNC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns"
+DEFINE NAMESPACE GFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns"
+DEFINE NAMESPACE CELL AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns"
+DEFINE NAMESPACE EFO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns"
+DEFINE NAMESPACE DRUGBANK AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns"
+DEFINE NAMESPACE PFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns"
+DEFINE NAMESPACE GO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns"
+DEFINE NAMESPACE MESH AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns"
+DEFINE NAMESPACE MESHA AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns"
+DEFINE NAMESPACE MESHF AS URL"https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns"
+DEFINE NAMESPACE PTS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/neurodegeneration-pathways/
+neurodegeneration-pathways-1.0.0.belns"
+
+DEFINE NAMESPACE UNIPROT AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+DEFINE NAMESPACE PUBCHEM AS PATTERN "^\d+$"
+DEFINE NAMESPACE dbSNP AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE FIXMECHEM AS LIST {".."}
+DEFINE NAMESPACE TAX AS PATTERN "^.*$"
+DEFINE NAMESPACE FIXME AS LIST {"anterograde mitochondrial transport", "mitochondrial-derived vesicle formation", "mitochondrial antigen presentation", "alpha-synuclein aggregation", "protein misfolding", "alpha-synuclein fibrillization"}
+
+##################################################################################
+# ANNOTATIONS Section
+##################################################################################
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno"
+DEFINE ANNOTATION Species AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20200622.belanno"
+DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+DEFINE ANNOTATION BioAssay AS URL   "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+DEFINE ANNOTATION Mouse_Type AS LIST {"α-synuclein transgenic mice"}
+# Document Annotations #
+DEFINE ANNOTATION PublicationType AS LIST {"Review", "Research"}
+DEFINE ANNOTATION PublicationStatus AS LIST {"Preprint", "Published"}
+DEFINE ANNOTATION Section AS LIST {"Full Text", "Abstract", "Results", "Discussions"}
+
+
+##################################################################################
+# Statements #
+##################################################################################
+SET Citation = {"PubMed", "Trends Neurosci. 2019 Jan;42(1):4-13. doi: 10.1016/j.tins.2018.09.007. Epub 2018 Oct 17.", "30342839"}
+SET PublicationType = "Review"
+SET PublicationStatus = "Published"
+SET Section = "Full Text"
+
+SET Support = "In idiopathic PD, the triggers are thought to act decades before the loss of nigrostriatal dopaminergic signaling has reached levels necessary for the onset of clinical motor symptoms"
+SET MeSHDisease = "Parkinson Disease"
+bp(PTS:"nigrostriatal dopaminergic pathway") -| path(HP:"Abnormality of central motor function")
+path(DO:"Parkinson's disease") -| bp(PTS:"nigrostriatal dopaminergic pathway")
+
+SET Support = "Several triggers of PD have already been proposed and include pathogens, environmental toxins as well as head trauma.Potential outcomes of triggering events may include long term gut dysfunction [6], chronic inflammation in critical tissues [7], or the direct misfolding of α-synuclein into pathogenic conformers."
+a(EFO:pathogen) -> path(MESH:Dysbiosis) 
+a(EFO:pathogen) -> path(HP:"chronic inflammation")
+a(EFO:pathogen) -> p(HGNC:SNCA, pmod(FIXME:"protein misfolding"))
+a(MESH:"Environmental Pollutants") -> path(MESH:Dysbiosis) 
+a(MESH:"Environmental Pollutants") -> path(HP:"chronic inflammation")
+a(MESH:"Environmental Pollutants") -> p(HGNC:SNCA, pmod(FIXME:"protein misfolding"))
+path(MESH:"Brain Injuries, Traumatic") -> path(MESH:Dysbiosis) 
+path(MESH:"Brain Injuries, Traumatic") -> path(HP:"chronic inflammation")
+path(MESH:"Brain Injuries, Traumatic") -> p(HGNC:SNCA, pmod(FIXME:"protein misfolding"))
+path(MESH:Dysbiosis) -> path(DO:"Parkinson's disease")
+path(HP:"chronic inflammation") -> path(DO:"Parkinson's disease")
+p(HGNC:SNCA, pmod(FIXME:"protein misfolding")) -> path(DO:"Parkinson's disease")
+
+SET Support = "Two anatomical sites have been suggested to be of particular relevance as places of origin for PD pathology. In 2003, Braak and colleagues first proposed that the olfactory epithelium and intestines [9] might be where PD begins. This was based on the histological observation of α-synuclein aggregates in these sites in very early stage PD, and even in cases presumed to be prodromal PD."
+bp(FIXME:"alpha-synuclein aggregation") pos path(DO:"Parkinson's disease")
+
+SET Support = "Gastrointestinal dysfunction and hyposmia are core features of PD, often occurring years to decades before the emergence of motor symptoms [10]. Their involvement in the early symptoms of PD, together with the findings of α-synuclein aggregates in these tissues [9], indicate that the gastrointestinal tract and olfactory system might be trigger sites in PD pathogenesis."
+path(DO:"gastrointestinal system disease") pos path(DO:"Parkinson's disease")
+path(HP:Hyposmia) pos path(DO:"Parkinson's disease")
+path(HP:"Abnormality of central motor function") pos path(DO:"Parkinson's disease")
+bp(FIXME:"alpha-synuclein aggregation") pos path(DO:"Parkinson's disease") 
+
+SET Support = "Even common gastrointestinal infections, such as norovirus, induce upregulation of α-synuclein in the gastrointestinal tract, potentially in an effort to rally an immune response."
+SET MeSHAnatomy = "Gastrointestinal Tract"
+a(TAX:Norovirus) -> p(HGNC:SNCA)
+UNSET MeSHAnatomy
+
+SET Support = "Aggregated α-synuclein is present in the enteric nervous system in PD patients [12], but it has also more recently been shown to occur in healthy people, indicating that α-synuclein aggregates in the gut are not specific to PD ."
+bp(FIXME:"alpha-synuclein aggregation") pos path(DO:"Parkinson's disease")
+
+SET Support = "Several studies have reported changes in gut microbiota in PD, including increases in Lactobacillus, Akkermansia, and Bifidobacterium, and decreases in Prevotella, Blautia and Faecalibacterium."
+path(DO:"Parkinson's disease") -> a(TAX:Lactobacillus)
+path(DO:"Parkinson's disease") -> a(TAX:Akkermansia)
+path(DO:"Parkinson's disease")increases a(TAX:Bifidobacterium)
+path(DO:"Parkinson's disease") -| a(TAX:Prevotella)
+path(DO:"Parkinson's disease") -| a(TAX:Blautia)
+path(DO:"Parkinson's disease") -| a(TAX:Faecalibacterium)
+
+SET Support = "However, unmedicated patients with rapid eye movement (REM) sleep behavior disorder, who exhibit a high conversion rate to PD, display similar changes in the gut microbiota."
+path(DO:"Parkinson's disease") pos path(HP:"rapid eye movement sleep") 
+path(HP:"rapid eye movement sleep") -> path(MESH:Dysbiosis)
+
+SET Support = "Moreover, α-synuclein-overexpressing mice exposed to the microbiota from PD patients display exacerbated motor dysfunction compared to those that received microbiota from healthy donors, supporting perturbation of gut microbiota as a potential PD trigger."
+path(DO:"Parkinson's disease") pos path(HP:"Abnormality of central motor function") 
+path(DO:"Parkinson's disease") pos path(MESH:Dysbiosis) 
+
+SET Support = "While all the aforementioned studies have focused on the gut microbiome, it is possible that analogous changes in the nasal microbiome trigger α-synuclein aggregation in the olfactory bulb."
+SET MeSHAnatomy = "Olfactory Bulb"
+path(MESH:Dysbiosis) -> bp(FIXME:"alpha-synuclein aggregation")
+UNSET MeSHAnatomy
+
+SET Support = "Thus, gut dysbiosis and/or small intestinal bacterial overgrowth, along with increased intestinal permeability, can cause systemic inflammation, which could spread to the CNS through systemic circulation and several neural pathways."
+path(MESH:Dysbiosis) -> bp(GO:"inflammatory response")
+bp(GO:"maintenance of permeability of blood-brain barrier") -| bp(GO:"inflammatory response")
+
+SET Support = "Metabolites secreted from gut bacteria that have been proposed to impact glial biology and neuroinflammation include short chain fatty acids and tryptophan metabolites [18].Microbiome metabolites have been shown to induce microglia activation and motor deficits in α-synuclein transgenic mice."
+SET Species = "10090"
+SET Mouse_Type = "α-synuclein transgenic mice"
+a(NCIT:"Tryptophan Metabolite") reg bp(GO:"microglial cell activation")
+a(CHEBI:"short-chain fatty acid") reg bp(GO:"microglial cell activation")
+a(NCIT:"Tryptophan Metabolite") reg path(ADO:neuroinflammation) 
+a(CHEBI:"short-chain fatty acid") reg path(ADO:neuroinflammation)
+a(NCIT:"Tryptophan Metabolite") reg path(HP:"Abnormality of central motor function")
+a(CHEBI:"short-chain fatty acid") reg path(HP:"Abnormality of central motor function")
+UNSET Species 
+UNSET Mouse_Type
+
+SET Support = "Epidemiological studies have linked pesticide exposure with increased PD risk.  Recent meta-analysis reported exposure to several common pesticides is associated with ≥ 50% increased risk for developing PD."
+a(CHEBI:pesticide) -> path(DO:"Parkinson's disease")
+
+SET Support = "In principle, pesticides could trigger PD pathogenesis via several possible mechanisms, including inhibiting mitochondrial complex I, inducing oxidative stress, stimulating inflammation, and causing α-synuclein fibrillization."
+a(CHEBI:pesticide) -| act(complex(GO:"mitochondrial respiratory chain complex I"))
+a(CHEBI:pesticide) -> bp(MESH:"Oxidative Stress")
+a(CHEBI:pesticide) -> bp(GO:"inflammatory response")
+a(CHEBI:pesticide) -> bp(FIXME:"alpha-synuclein fibrillization")
+path(DO:"Parkinson's disease") neg act(complex(GO:"mitochondrial respiratory chain complex I"))  
+bp(MESH:"Oxidative Stress") -> path(DO:"Parkinson's disease")
+bp(GO:"inflammatory response") -> path(DO:"Parkinson's disease")
+bp(FIXME:"alpha-synuclein fibrillization") -> path(DO:"Parkinson's disease")
+
+SET Support = "Human dopaminergic neurons carrying the SNCA-A53T mutation develop impaired anterograde mitochondrial transport when exposed to regulated and approved pesticides."
+SET MeSHAnatomy = "Dopaminergic Neurons"
+SET Species = "9606"
+composite(a(CHEBI:pesticide), p(HGNC:SNCA, var("p.Ala53Thr"))) -| bp(GO:"anterograde axonal transport of mitochondrion")
+UNSET MeSHAnatomy
+
+SET Support = "Intravenous injection of the neurotoxin MPTP (e.g., through use of the synthetic analgesic drug MPPP when accidentally contaminated with MPTP) causes rapid death of nigral dopamine neurons and, consequently, PD symptoms."
+SET MeSHAnatomy = "Substantia Nigra"
+a(CHEBI:"1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine") -> bp(GO:"neuron death")
+bp(GO:"neuron death") -> path(DO:"Parkinson's disease")
+
+SET Support = "For example, pathogen-induced (trigger) inflammation in the gut resulting in localized α-synuclein accumulation and aggregation in enteric nerves [11] may not promote PD until years later, after an age-related decline in cellular energy homeostasis and lysosomal function (facilitators) has set in, which in turn could enable the propagation of α-synuclein aggregates to the brainstem."
+a(EFO:pathogen) -> bp(GO:"inflammatory response")
+bp(GO:"inflammatory response") -> bp(FIXME:"alpha-synuclein aggregation")
+bp(FIXME:"alpha-synuclein aggregation") -| bp(GO:"energy homeostasis")
+bp(FIXME:"alpha-synuclein aggregation") -> a(NCIT:"Lysosomal Function Inhibition")
+bp(GO:"energy homeostasis") -| path(DO:"Parkinson's disease") 
+a(NCIT:"Lysosomal Function Inhibition") -> path(DO:"Parkinson's disease")
+
+SET Support = "Inflammation in PD is present both in the periphery (systemic inflammation) and in the central nervous system."
+path(DO:"Parkinson's disease") pos bp(GO:"inflammatory response")
+
+SET Support = "At the molecular level, inflammatory mediators are known to promote α-synuclein misfolding and aggregation [34]. Importantly, there are also emerging, compelling links between inflammation and the spread of α-synuclein pathology, which could explain how systemic inflammation facilitates the propagation of α-synuclein pathology from peripheral tissues to central nervous system."
+bp(GO:"inflammatory response") -> p(HGNC:SNCA, pmod(FIXME:"protein misfolding"))
+bp(GO:"inflammatory response") -> bp(FIXME:"alpha-synuclein aggregation")
+
+SET Support = "Notably, colon biopsies from PD patients exhibit increased mRNA levels for pro-inflammatory cytokines and glial markers, indicative of enteric inflammation."
+SET MeSHAnatomy = "Colon"
+path(DO:"Parkinson's disease") -> bp(GO:"cytokine production involved in inflammatory response")
+path(DO:"Parkinson's disease") -> bp(GO:"glial cell activation")
+bp(GO:"glial cell activation") pos bp(GO:"inflammatory response")
+
+SET Support = "Furthermore, patients with inflammatory bowel disease have a higher incidence of PD [37–40], which is substantially reduced by early exposure to anti-inflammatory anti-tumor necrosis factor therapy."
+path(DO:"inflammatory bowel disease") -> path(DO:"Parkinson's disease")
+a(NCIT:"Anti-Tumor Necrosis Factor Therapy") -| path(DO:"inflammatory bowel disease")
+
+SET Support = "Systemic inflammation in PD is reflected by elevated serum IL-6, TNF-α and C-reactive protein, which are associated with severity or faster decline of motor symptoms [41]. In addition, there is an increased risk for PD among people who develop type 2 diabetes, especially at younger ages."
+p(HGNC:IL6) pos bp(GO:"inflammatory response")
+p(HGNC:TNF) pos bp(GO:"inflammatory response") 
+p(HGNC:CRP) pos bp(GO:"inflammatory response")
+bp(GO:"inflammatory response") pos path(HP:"Abnormality of central motor function")
+path(DO:"type 2 diabetes mellitus") -> path(DO:"Parkinson's disease")
+
+SET Support = "Since type 2 diabetes is coupled to systemic inflammation, this might suggest a facilitating role for inflammatory changes in those who happen to be exposed to disease triggers."
+bp(GO:"inflammatory response") pos path(DO:"type 2 diabetes mellitus")
+
+SET Support = "Furthermore, general immunosuppressive and anti-inflammatory treatments reduce the risk of developing PD [43]. Taken together, systemic inflammation itself, and several chronic conditions that feature increased inflammation, might be considered facilitators of PD pathogenesis."
+a(CHEBI:"immunosuppressive agent") -| path(DO:"Parkinson's disease")
+a(CHEBI:"anti-inflammatory agent") -| path(DO:"Parkinson's disease")
+bp(GO:"inflammatory response") -> path(DO:"Parkinson's disease")
+
+SET Support = "Strong evidence from preclinical and clinical studies supports a role for mitochondrial dysfunction in PD pathogenesis."
+path(HP:"Abnormality of mitochondrial metabolism") -> path(DO:"Parkinson's disease")
+
+SET Support = "PD patients have reduced mitochondrial complex I activity in the substantia nigra, skeletal muscles, and platelets."
+SET MeSHAnatomy = {"Substantia Nigra", "Blood Platelets"}
+SET Anatomy = "skeletal muscle tissue"
+path(HP:"Decreased activity of mitochondrial complex I") pos path(DO:"Parkinson's disease")
+path(DO:"Parkinson's disease") neg act(complex(GO:"mitochondrial respiratory chain complex I"))
+
+SET Support = "Furthermore, mutations in genes known to cause familial PD have been directly or indirectly implicated in causing mitochondrial dysfunction. For example, PINK1 and Parkin actively inhibit mitochondrial-derived vesicle formation and mitochondrial antigen presentation; thus mutation of these genes in autosomal recessive Parkinson’s disease may result in excessive antigen presentation that provokes an autoimmune response."
+g(HGNC:PRKN, var("?")) -> bp(GO:"antigen processing and presentation")
+g(HGNC:PINK1, var("?")) -> bp(GO:"antigen processing and presentation")
+bp(GO:"antigen processing and presentation") -> bp(MESH:Autoimmunity)
+p(HGNC:PRKN) -| bp(FIXME:"mitochondrial-derived vesicle formation")
+p(HGNC:PINK1) -| bp(FIXME:"mitochondrial antigen presentation")
+
+SET Support = "In addition, numerous studies demonstrate that mitochondrial dysfunction results in the chronic production of reactive oxygen species, leading to oxidative stress, and promoting both misfolding of α-synuclein and directly causing neurodegeneration."
+path(HP:"Abnormality of mitochondrial metabolism") -> a(CHEBI:"reactive oxygen species")
+a(CHEBI:"reactive oxygen species") -> bp(MESH:"Oxidative Stress")
+bp(MESH:"Oxidative Stress") -> p(HGNC:SNCA, pmod(FIXME:"protein misfolding"))
+bp(MESH:"Oxidative Stress") -> path(HP:Neurodegeneration)
+
+SET Support = "Leucine-rich repeat kinase 2 (LRRK2) and glucocerebrosidase (GBA) have an incomplete penetrance with 28–74% (G2019S LRRK2 mutation) [48] and 2–30% [49, 50] of patients developing PD, respectively."
+p(HGNC:LRRK2, var("p.Gly2019Ser")) -> path(DO:"Parkinson's disease")
+p(MESH:Glucosylceramidase, var("?")) -> path(DO:"Parkinson's disease")
+
+SET Support = "LRRK2 variants are the leading heritable form of PD [47]. Mutations in LRRK2 associated with PD elevate LRRK2 kinase activity and decrease GTPase activity."
+p(HGNC:LRRK2, var("p.Gly2019Ser")) -> path(DO:"Parkinson's disease")
+p(HGNC:LRRK2, var("?")) -> act(p(HGNC:LRRK2), ma(GO:"kinase activity"))
+p(HGNC:LRRK2, var("?")) -| act(p(HGNC:LRRK2), ma(GO:"GTPase activity"))
+
+SET Support = "Macrophages, monocytes, and neutrophils express high levels of LRRK2, implying that it contributes to defense against pathogens [51]. Therefore, people with LRRK2 variants might be more susceptible to viral or bacterial infections, including ones that have been postulated to trigger PD."
+p(HGNC:LRRK2, var("?")) -> path(DO:"viral infectious disease")
+p(HGNC:LRRK2, var("?")) -> path(DO:"bacterial infectious disease")
+path(DO:"viral infectious disease") -> path(DO:"Parkinson's disease")
+path(DO:"bacterial infectious disease") -> path(DO:"Parkinson's disease")
+
+SET Support = "A recent study, for instance, demonstrated that LRRK2 activity regulates Mycobacterium tuberculosis replication by affecting phagosome maturation in macrophages [52], and LRRK2 mutations may trigger PD pathogenesis via a dysregulation of responses to such bacteria."
+act(p(HGNC:LRRK2)) reg bp(GO:"bacterial-type DNA replication")
+a(TAX:"Mycobacterium tuberculosis") association bp(GO:"bacterial-type DNA replication")
+p(HGNC:LRRK2, var("?")) -> path(DO:"Parkinson's disease")
+
+SET Support = "This may be particularly relevant in the gastrointestinal tract, as there is growing evidence for a critical role of intestinal inflammation in PD pathogenesis [54]. Additionally, LRRK2 has been identified as a major susceptibility gene for Crohn’s disease, which is associated with deep transmural inflammation."
+SET MeSHAnatomy = "Gastrointestinal Tract"
+path(DO:"Parkinson's disease") pos bp(GO:"inflammatory response")
+g(HGNC:LRRK2, var("?")) -> path(DO:"Crohn's disease")
+path(DO:"Crohn's disease") pos bp(GO:"inflammatory response")
+
+SET Support = "The targets of the LRRK2 kinase, and cell model experiments, suggest that mutations can also alter vesicular trafficking, mitochondrial function, protein synthesis, cytoskeletal dynamics [57], and autophagy–functions that, when impaired, may facilitate PD pathogenesis."
+p(HGNC:LRRK2) reg bp(GO:"vesicle-mediated transport")
+p(HGNC:LRRK2) reg bp(PW:"mitochondria homeostasis pathway")
+p(HGNC:LRRK2) reg bp(GO:translation)
+p(HGNC:LRRK2) -> bp(GO:"regulation of microtubule cytoskeleton organization")
+p(HGNC:LRRK2) reg bp(GO:autophagy)
+p(HGNC:LRRK2, var("?")) -> path(DO:"Parkinson's disease")
+
+SET Support = "Genome-wide studies in PD have identified several polymorphisms that are adjacent to genes involved in lysosomal function and autophagy. For example, multiple mutations in different loci of the GBA gene, that encodes a lysosomal enzyme, have been identified."
+p(HGNC:GBA, var("?")) -> path(DO:"Parkinson's disease")
+
+SET Support = "Failure of the lysosomal-autophagy pathway may aggravate progression of neuropathology by elevating levels of extracellular α-synuclein aggregates, and promoting cell-to-cell spread of α-synuclein pathology."
+bp(GO:"lysosomal protein catabolic process") -| bp(FIXME:"alpha-synuclein aggregation")
+
+SET Support = "Neuroinflammation has been closely linked with neurodegenerative diseases and is often characterized by the activation of glial cells and the overexpression of pro-inflammatory mediators."
+path(ADO:neuroinflammation) -> path(HP:Neurodegeneration)
+path(ADO:neuroinflammation) -> bp(GO:"glial cell activation")
+path(ADO:neuroinflammation) -> bp(GO:"inflammatory response")
+
+SET Support = "However, in PD, activated microglia are believed to have a deleterious effect on neurons and emit harmful levels of cytokines. This induces a vicious, self-propagating chronic neuroinflammatory state that contributes to the neurodegenerative process."
+SET MeSHAnatomy = "Neurons"
+bp(GO:"microglial cell activation") -> bp(GO:"cytokine production")
+bp(GO:"cytokine production") -> path(HP:"chronic inflammation")
+path(HP:"chronic inflammation") -> path(HP:Neurodegeneration)
+UNSET MeSHAnatomy
+
+SET Support = "Activated microglia have also been shown to induce astrocytes to release neurotoxic mediators, leading to further neuronal damage."
+bp(GO:"microglial cell activation") -> bp(GO:"astrocyte activation")
+bp(GO:"astrocyte activation") -> sec(a(CHEBI:neurotoxin))
+bp(GO:"astrocyte activation") -> path(HP:Neurodegeneration)
+
+SET Support = "The role of neuroinflammation in PD is supported by the presence of activated microglia in the substantia nigra of PD patients [68] as well as several pre-clinical studies in PD animal models."
+SET MeSHAnatomy = "Substantia Nigra"
+bp(GO:"microglial cell activation") pos path(ADO:neuroinflammation)
+path(ADO:neuroinflammation) -> path(DO:"Parkinson's disease")
+UNSET MeSHAnatomy
+
+SET Support = "Additionally, neuroinflammation is a predictive indicator in the development of non-motor symptoms and cognitive decline [69, 70], further illuminating its role as an aggravator and potential therapeutic target."
+path(ADO:neuroinflammation) -| bp(GO:cognition)
+
+UNSET Species
+UNSET MeSHDisease
+UNSET Citation

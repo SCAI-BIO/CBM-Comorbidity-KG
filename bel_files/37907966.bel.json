@@ -1,0 +1,6764 @@
+[
+ {
+  "document": {
+   "authors": "Febin Seethi V",
+   "contact_info": "febin.seethi@causalitybiomodels",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "37907966.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CL",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHF",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Discussions",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Model",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "isogenic model of the neurovascular unit"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease_Type",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "late-onset Alzheimers disease"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_cell",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "brain capillary endothelial-like cells",
+      "microglia-like cell"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Fluids Barriers CNS. 2023 Oct 31;20(1):78. doi: 10.1186/s12987-023-00471-y.",
+       "ref": "37907966",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "We found no changes in hiPSCs and PCs but a LOAD-dependent decrease in telomere length in ACs, BCECs, and NSCs, thus integrating a disease-related molecular phenotype for LOAD in our isogenic in vitro model of the NVU."
+     },
+     {
+      "set": {
+       "Model": [
+        "isogenic model of the neurovascular unit"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "brain capillary endothelial-like cells"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "astrocyte"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neural Stem Cells"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Disease_Type": [
+        "late-onset Alzheimers disease"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Telomere Shortening"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "In the CON NVU model, barrier integrity of BCECs was significantly increased by NSCs (p = 0.02; TEER = 2674 \u00b1 670 \u03a9*cm2) compared to BCEC mono-cultures (TEER= 2299 \u00b1 123 \u03a9*cm2) (Fig. 1G). The supporting effect was suppressed in the LOAD NVU model."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "maintenance of permeability of blood-brain barrier"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "In LOAD BCECs, we found a predominance of down-regulated transcripts in all co-cultures (Fig. 2D)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "co-culture",
+        "quantitative PCR"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "brain capillary endothelial-like cells"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "pericyte cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "OCLN"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN14"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "set": {
+       "Cell": [
+        "astrocyte"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN24"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN22"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "microglia-like cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "KRT8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AQP11"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN15"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MARVELD2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN9"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neural Stem Cells"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CDH5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "JAM2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TFRC"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "JAM3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "F11R"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "WWC2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Second, we studied differences between the CON and LOAD NVU model to investigate the influence of LOAD on the mRNA expression of BBB markers in the related isogenic BCECs (Fig. 3). Our analysis revealed transcriptional changes in LOAD BCECs compared with CON BCECs. The heat map of Log2FC values shows 90 BBB markers in LOAD BCECs compared to CON BCECs."
+     },
+     {
+      "set": {
+       "Cell": [
+        "astrocyte"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "PECAM1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "microglia-like cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN18"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "tv2a"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neural Stem Cells"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN20"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN22"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN23"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN24"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "For example, PCs down-regulated claudins (CLDN5, -7, -10 tvb), TJ transcripts (TJP1, OCLN), transporters and receptors (ABCC4, LRP8, LSR, SLC7A5), and mucins (MUC1 tva, MUC18) in LOAD BCECs (Fig. 3C)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "pericyte cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN7"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN10"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "OCLN"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MCAM"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "ACs decreased the transcription of claudins (CLDN17, -23) in LOAD BCECs compared to CON BCECs. Mucins were altered with transcript variant a (tva) of MUC1 being reduced and tvb being increased (Fig. 3C)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "astrocyte"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN17"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN23"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AQP10"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "MGCs altered the transcription of claudins (CLDN7, -25 tv1-4) and other TJ (F11R, JAM3, TJP1, TJP2) and adherens junction makers (AJs; CDH1), transporters and receptors (ABCB1, ABCC4, INSR, LRP1, LSR, MFSD2A, SLC2A1, SLC7A1, SLC7A3, SLC7A5, SLC16A2), and other factors (KRT18, FN1, MUC1 tva, WWC2) in LOAD BCECs (Fig. 3C)."
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "microglia-like cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLCN7"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN25"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "F11R"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "INSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC2A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CDH1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "KRT18"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "FN1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "WWC2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCB1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MFSD2A"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "JAM3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "evidence": "NSCs had the strongest effect on transcriptional changes in LOAD BCECs (Fig. 3C) including increased, but mainly decreased expression of numerous claudins (CLDN3, -4, -7, -8, -10, -11, -12 tv2, -17, -19, -21, -22, -24) and TJ proteins (F11R, JAM2, JAM3, TJP1, TJP3, OCLN, MARVELD2)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neural Stem Cells"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN7"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN10"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN11"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN12"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN17"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN22"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN24"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "F11R"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "JAM2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "JAM3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "OCLN"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MARVELD2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCA1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCA7"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCB1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCG2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AGER"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "INSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MFSD2A"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "RARB"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "RXRA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "RXRB"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC2A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TFRC"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "KRT19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "VIM"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AQP11"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "APOE"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CTNNB1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "AQP10"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "FN1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "VEGFA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "VWF"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "WWC2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "We also found increased transcription of the six SLC transporters SLC2A1/GLUT1, SLC7A1 (cationic amino acid transporter 1, CAT1), SLC7A3 (CAT3), SLC7A5 (large neutral amino acid transporter 1, LAT1), SLC16A1 (monocarboxylate transporter 1, MCT1, and SLC16A2 (MCT8)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "quantitative PCR"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "brain capillary endothelial-like cells"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC2A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC16A1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MCAT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Transcripts involved in lipid metabolism were significantly altered including APOE, two APOE receptors (low density lipoprotein receptor-related protein 1, LRP1 and LRP8), and the gene encoding the lipolysis-stimulated lipoprotein receptor (LSR). Two intermediate filaments (KRT19, VIM) were significantly upregulated."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "APOE"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP8"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "APOE"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "lipid metabolic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "lipid metabolic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LRP8"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "lipid metabolic process"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "KRT19"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "VIM"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The gene encoding the aging marker advanced glycosylation end-product specific receptor (AGER; receptor for advanced glycosylation end-product, RAGE) was increased. Finally, mucins were also altered including two MUC1 transcripts (tva was reduced and tvb increased) (Fig. 3C)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "tva"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "tvb"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "evidence": "Indeed, down-regulation of tva of MUC1 was observed independent of the respective brain cell type and the only significantly, differentially regulated transcript shared by all LOAD NVU models (PCs, p = 0.014; ACs, p = 0.0004; MGCs, p = 0.00004; NSCs, p = 0.00002) (Fig. 3D)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "astrocyte",
+        "pericyte cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_cell": [
+        "microglia-like cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Neural Stem Cells"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MUC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "tva"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "Five significantly regulated transcripts were shared by all three (co-cultures with PCs, MGCs, and NSCs) LOAD NVU models compared to CON NVU models, including modulation of ABCC4 and down-regulation of CLDN7, TJP1, LSR, and SLC7A5 (Fig. 3C, D)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "pericyte cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ABCC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "regulates"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "CLDN7"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "TJP1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "LSR"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "DO",
+         "name": "Alzheimer's disease"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "rna"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SLC7A5"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_cell"
+      ]
+     },
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Disease_Type"
+      ]
+     },
+     {
+      "unset": [
+       "Model"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

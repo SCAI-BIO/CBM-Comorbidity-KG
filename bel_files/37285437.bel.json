@@ -1,0 +1,1734 @@
+[
+ {
+  "document": {
+   "authors": "Febin Seethi V",
+   "contact_info": "febin.seethi@causalitybiomodels",
+   "copyright": "Copyright \u00a9 2020 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "37285437.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CELL",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CMO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cmo/cmo-20171030.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHF",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-psychology/mesh-psychology-20170419.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "REACTOME",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/reactome/reactome-20170911.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "cell damage"
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Technique",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "fluorescence fusion assay"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "HoursPostInfection",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "72 hours"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Discussions",
+      "Full Text",
+      "Results"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Sci Adv. 2023 Jun 9;9(23):eadg2248. doi: 10.1126/sciadv.adg2248. Epub 2023 Jun 7.",
+       "ref": "37285437",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "Seventy-two hours post-infection (hpi), the cultures were fixed and \\\nexamined by confocal fluorescence microscopy, revealing the presence \\\nof fused neurons [positive for the neuronal marker microtubule- \\\nassociated protein 2 (MAP2)], as characterized by the presence of both \\\nthe GFP and mCherry fluorescent proteins for all the SARS-CoV-2 titers \\\nused."
+     },
+     {
+      "set": {
+       "Species": [
+        "10090"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Disease": [
+        "COVID-19"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "fluorescence microscopy"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     },
+     {
+      "set": {
+       "HoursPostInfection": [
+        "72 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "HoursPostInfection"
+      ]
+     },
+     {
+      "evidence": "Antibody staining revealed that fused neurons were positive for the \\\nfusogenic spike S protein , which was distributed across the surface \\\nof infected neurons."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunohistochemistry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "Upon SARS-CoV-2 infection, glial cells expressing hACE2 were also \\\npositive for the spike S protein (fig. S1, C and D), and we observed \\\nadditional fusion phenotypes, including neuron-glia (fig. S2, A to C) \\\nand glia-glia fusion (fig. S2, D to F)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "glial cell",
+        "neuron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "evidence": "In agreement with previous findings (2), we found that high doses of \\\nneuronal SARS-CoV-2 infection resulted in cell damage, a phenotype \\\nthat was not apparent at the lowest doses used within 72 hpi (fig. S1, \\\nE and F)."
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "pathology"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "cell damage"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "Similar to what was observed after infection of 2D neuronal cultures, \\\nwe found that SARS-CoV-2\u2013infected brain organoids exhibited neuronal \\\nsyncytia formed by GFP-interconnected neurons."
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Organoids"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Our results revealed that the expression of p15 was sufficient to \\\ninduce neuronal fusion, as detected by the presence of neurons \\\ncontaining both the GFP and mCherry fluorescent proteins a phenotype \\\nthat was never observed when the control vector was cotransfected in \\\nthe absence of p15."
+     },
+     {
+      "set": {
+       "Technique": [
+        "fluorescence fusion assay"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The expression of the fusogen spike S and its receptor hACE2 in \\\nadjacent cells resulted in the fusion of these neurons and the mixing \\\nof the fluorescent proteins."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "ACE2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "With both p15 and spike S, we observed not only neuron-neuron fusion \\\nbut also neuron-glia and glia-glia fusion when the fusogens were \\\nexpressed in these cell types (fig. S4), a result that mimics our \\\nobservation with SARS-CoV-2 infection."
+     },
+     {
+      "set": {
+       "Cell": [
+        "glial cell",
+        "neuron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "unset": [
+       "Technique"
+      ]
+     },
+     {
+      "evidence": "During our analysis of p15 expressed in mechanosensory neurons, we \\\nobserved additional phenotypes that included defects in axonal \\\nguidance and axonal maintenance (visible as axonal breakages), as well \\\nas loss of mechanosensory neurons (fig. S6, D and E)."
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Species": [
+        "6239"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "axon guidance"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "neuron projection maintenance"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "mechanosensory behavior"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "Similar to what we observed in neuronal cultures and in C. elegans \\\nmechanosensory neurons, p15 expression resulted in neuronal fusion \\\npresenting as clusters of interconnected GFP-positive cells (fig. S7, \\\nA to E, and movie S2). Neuronal fusion was observed both in the \\\nhippocampus and in the cortex (fig. S7, F to I), representing up to \\\n15% of transduced hippocampal neurons at 14 days after AAV infection \\\n(fig. S7H)."
+     },
+     {
+      "set": {
+       "Species": [
+        "10090"
+       ]
+      }
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Cerebral Cortex",
+        "Hippocampus"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Cell": [
+        "neuron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "Three days after the expression of the fusogens, the neuronal cultures \\\nwere inspected, revealing the formation of neuronal clusters of \\\ninterconnected GFP-positive cells that resembled the neuronal \\\nsyncytium observed after p15 expression in murine neurons (fig. S8, A \\\nto C)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "Q918V6"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "We found that, upon SARS-CoV-2 infection, neuronal fusion occurred \\\nbetween the somas, as well as between the neurites far from the somas \\\n(Fig. 1D and fig. S9, A and B)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Cell"
+      ]
+     },
+     {
+      "evidence": "Our results reveal not only the presence of mCardinal in both fused \\\nneurons but also the movement of mitochondria between them (Fig. 3, C \\\nto E, and movie S3)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "induction by virus of host cell-cell fusion"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "mitochondrion"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "CELL",
+           "name": "neuron"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "CELL",
+           "name": "neuron"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Every neuron that fused with glial cells presented a complete loss in \\\nneuronal activity (fig. S12, E to G)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Organoids"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Neuroglia"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Neurons"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Neuroglia"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "MESH",
+            "name": "Neurons"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "neuronal signal transduction"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "evidence": "The intracellular Ca2+ concentration increased within the bridges \\\n(fig. S14, C to E), forming Ca2+ peaks that reflected the patterns of \\\nneuronal activity (fig. S14, F and G)."
+     },
+     {
+      "set": {
+       "MeSHAnatomy": [
+        "Brain",
+        "Intracellular Space",
+        "Organoids"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Severe acute respiratory syndrome coronavirus 2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "calcium ion"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "MeSHAnatomy"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

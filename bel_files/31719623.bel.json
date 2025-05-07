@@ -1,0 +1,7163 @@
+[
+ {
+  "document": {
+   "authors": "Aneetta Baby",
+   "contact_info": "aneetta@causalitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "31719623.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "alpha-synuclein fibrillation",
+      "tau fibrillation"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TimeLine",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "1 hour",
+      "10 minutes",
+      "18 hours",
+      "3 hours"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Protein_Type",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "fibril"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Sci Rep. 2019 Nov 12;9(1):16543. doi:10.1038/s41598-019-53038-z.",
+       "ref": "31719623",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "Thus scanning electron microscopy revealed that the high number of fibrils on the cell surface of fibril-treated cells at the start (i.e. 10 min) of the incubation period was reduced at 3h, suggesting the onset of intense internalization."
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "scanning electron microscopy"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "10 minutes"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Protein_Type": [
+        "fibril"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "3 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "As Fig. 1b,c show, SDCs - especially the neuron predominant SDC3 - increased the cellular uptake of fibrils, while internalization of Trf, the marker of clathrin-mediated endocytosis was reduced by SDC1-3 (and left unaffected by SDC4) suggesting that SDC mediated uptake of the fibrils occur through clathrin-independent routes."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "fluorescent labeling method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC2"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "Protein_Type"
+      ]
+     },
+     {
+      "evidence": "Microscopic studies revealed similar pattern as flow cytometry:namely that compared to WT K562 cells, fibril-treated SDC transfectants exhibited higher intracellular fluorescent signals (Fig. 1d)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "laser scanning confocal microscope"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC2"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC2"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC2"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC3"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Inducing undersulfation of SDCs\u2019 HS chains with sodium chlorate (NaClO3), an inhibitor of protein sulfation, significantly (p<0.01) reduced on \u03b1-syn and tau fibril uptake in all cells lines, highlighting the importance of polyanionic HS chains in interaction with the proteins (Fig. 3a\u2013d)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Protein_Type": [
+        "fibril"
+       ]
+      }
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell",
+        "SH-SY5Y cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SNCA"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SNCA"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SNCA"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SNCA"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "MAPT"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "MAPT"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "MAPT"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "sodium chlorate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "pmod"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "protein sulfation",
+            "type": "",
+            "amino_acid": "",
+            "position": 0
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "MAPT"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Compared to WT K562 cells, WT SDC4 transfectants exhibited the most significant (p<0.05) increase in \u03b1-syn and tau fibril uptake (Fig. 3f,g). "
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "On the other hand, mutants with a truncated ectodomain containing only the HSA with the HS chains increased fibril internalization at an extent similar to SDC4 transfectants, thus confirming the significance of polyanionic HS chains in the interactions with \u03b1-syn or tau fibrils."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "SH-SY5Y cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "HSA.pSi4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "HSA.pSi4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "SDC3 overexpression \u2013 either in differentiated or undifferentiated SH-SY5Y cells - induced increased HS expression, along with increased internalization of both fibrils (Fig. 4a,b)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparan sulfate"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Thus SDC3 and to a lesser extent, SDC4 and triggered fibrillation of \u03b1-syn and tau over time (Fig. 5a,b)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "fluorescent labeling method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "alpha-synuclein fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "tau fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "alpha-synuclein fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "tau fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "The extent of fibril formation due to SDC overexpression, especially in the case of SDC2-4 is very spectacular:18h after addition of \u03b1-syn and tau monomers to SDC transfectants, scanning electron microscopy revealed widespread appearance of mature fibrils (i.e. larger than 2\u00b5m) expanding transcellularly. "
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "scanning electron microscopy"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "18 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SNCA"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "MAPT"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Protein_Type"
+      ]
+     },
+     {
+      "evidence": "Uptake studies showed that while at 1h of incubation the cellular uptake of monomeric \u03b1-syn and tau were lower in the SDC overexpressing lines, at 18h, when fibril are already formed due to SDCs, SDC overexpression also triggered higher amount of \u03b1-syn or tau uptake (Fig. 6a\u2013f)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "laser scanning confocal microscope"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "1 hour"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "set": {
+       "Protein_Type": [
+        "fibril"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "18 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "unset": [
+       "Protein_Type"
+      ]
+     },
+     {
+      "evidence": "On the other hand, SDC transfectants \u2013 except for SDC4 \u2013 internalized less Trf at both time points, referring to affected clathrin-mediated endocytosis. "
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "1 hour"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "18 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "TF"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Confocal microscopy also showed ThT-labeled aggregates intracellularly 18h after treatment with monomeric \u03b1-syn or tau, especially in SDC transfectants, suggesting once SDCs trigger the formation of \u03b1-syn or tau fibrils, they also mediate the intracellular translocation of the fibrils (Fig. 6h)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Protein_Type": [
+        "fibril"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Protein_Type"
+      ]
+     },
+     {
+      "evidence": "Overexpressing SDC3 in SH-SY5Y cells, either differentiated or undifferentiated, induced lower uptake of \u03b1-syn or tau monomers at 1h (Fig. 8a,c), but significantly (p<0.05) higher at 18h of incubation, when fibrils are already formed, as revealed by both ThT fluorescence and electron microscopic studies (Fig. 8a\u2013f)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "SH-SY5Y cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "laser scanning confocal microscope"
+       ]
+      }
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "1 hour"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "set": {
+       "TimeLine": [
+        "18 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Thus 18h after addition of \u03b1-syn or tau monomers, overexpressed SDC3 - either in undifferentiated or differentiated SH-SY5Y cells - triggered the fibrillation of both proteins"
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "alpha-synuclein fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "tau fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "TimeLine"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Electron microscopy also revealed widespread presence of mature fibrils on SDC3 overexpressing SH-SY5Y cells at 18h (Fig. 8c\u2013e), while confocal microscopic studies showed higher number of ThT-labeled aggregates in SDC3 transfectants at the same time point (Fig. 8f), suggesting that while inducing fibrillation, SDC3 also facilitate the uptake of fibrillar \u03b1-syn or tau."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "electron microscopy",
+        "laser scanning confocal microscope"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Protein_Type": [
+        "fibril"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "alpha-synuclein fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "tau fibrillation"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SNCA"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "MAPT"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Protein_Type"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

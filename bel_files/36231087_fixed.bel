@@ -1,0 +1,230 @@
+SET DOCUMENT Name = "36231087.bel"
+SET DOCUMENT Authors = "Aneetta Baby"
+SET DOCUMENT ContactInfo = "aneetta@causalitybiomodels.com"
+SET DOCUMENT Description = "COMMUTE-WP4-BEL_curation"
+
+SET DOCUMENT Licenses = "Private Ownership to Fraunhofer Institute SCAI"
+SET DOCUMENT Copyright = "Copyright © 2024 Fraunhofer Institute SCAI, All rights reserved"
+SET DOCUMENT Version = "2.0"
+
+
+##################################################################################
+# NAMESPACES Section
+##################################################################################
+
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE CELL AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns"
+
+DEFINE NAMESPACE HGNC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns"
+DEFINE NAMESPACE GFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns"
+DEFINE NAMESPACE DRUGBANK AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns"
+DEFINE NAMESPACE PFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns"
+DEFINE NAMESPACE GO AS URL 	"https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns"
+DEFINE NAMESPACE MESH AS URL 	"https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns"
+DEFINE NAMESPACE MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns"
+DEFINE NAMESPACE NCBIGENE AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns"
+DEFINE NAMESPACE COVID AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns"
+DEFINE NAMESPACE NCIT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns"
+DEFINE NAMESPACE TAX AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns"
+#DEFINE NAMESPACE UNIPROT AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+#DEFINE NAMESPACE PUBCHEM AS PATTERN "^\d+$"
+#DEFINE NAMESPACE dbSNP AS PATTERN "rs[0-9]+"
+#DEFINE NAMESPACE FIXMECHEM AS LIST {".."}
+DEFINE NAMESPACE FIXME AS LIST {"pulmonary vascular congestion", "diffuse alveolar damage", "acute glomerular alteration", "microthrombus","parenchymal dissociation","myocyte vacuolization","spongiosis","hypoxic myocytic injury","vascular cuffing","dystelectasis", "fatty infiltrate","cerebral microbleeds","interstitial macrophage foci"}
+
+##################################################################################
+# ANNOTATIONS Section
+##################################################################################
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20200623.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno"
+DEFINE ANNOTATION Species AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno"
+#DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+DEFINE ANNOTATION BioAssay AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno"
+DEFINE ANNOTATION CovidAccession AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno"
+DEFINE ANNOTATION Gender AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+
+# Document Annotations #
+DEFINE ANNOTATION PublicationType AS LIST {"Review", "Research"}
+DEFINE ANNOTATION PublicationStatus AS LIST {"Preprint", "Published"}
+DEFINE ANNOTATION Section AS LIST {"Full Text", "Abstract", "Results"}
+DEFINE ANNOTATION Technique AS LIST {"H&E staining"}
+
+SET Citation = {"PubMed", "Cells. 2022 Oct 4;11(19):3124. doi: 10.3390/cells11193124.","36231087"}
+SET PublicationType = "Research"
+SET PublicationStatus = "Published"
+SET Section = "Results"
+
+SET Support = "In the lung, H&E revealed severe congestion, diffuse alveolar damage, and interstitial pneumonia presenting as septal infiltrate shown in the middle of the image (A); SARS-CoV-2 positivity is evident in alveolar pneumocytes showing cytopathic features (B) and in the bronchiolar ciliated epithelium (B); diffuse interstitial macrophages detected by CD68 antibody (C, arrowheads); T-lymphocyte (D) and B-lymphocyte (E) infiltrates are revealed by CD3 and CD20 reactions, respectively; CD42b marks several microthrombi in capillary and interstitial vessels characterized by a rosary crown feature (F)."
+SET Species = "9606"
+SET Disease = "COVID-19"
+SET Technique = "H&E staining"
+SET MeSHAnatomy = "Lung"
+path(DO:"COVID-19") -> path(FIXME:"pulmonary vascular congestion")
+path(DO:"COVID-19") -> path(FIXME:"diffuse alveolar damage")
+path(DO:"COVID-19") -> path(DO:"acute interstitial pneumonia")
+path(DO:"COVID-19") -> a(MESH:Macrophages)
+path(DO:"COVID-19") -> a(NCIT:"Lymphocytic Infiltrate")
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy
+
+SET Support = "In the kidney, H&E labeled acute glomerular alterations in the lower part of the image and inflammatory infiltrates at the top (G); SARS-CoV-2 immunoreactivity detectable in some vascular endothelial cells (H, arrows); occasional foci of macrophages detected by the CD68 antibody (I, arrowheads); as in the lung, T-lymphocyte (J) and B-lymphocyte (K) infiltrates are revealed by CD3 and CD20 reactions, respectively; occasional microthrombi in the glomerular capillary are marked by CD42b antibody (L)."
+SET MeSHAnatomy = "Kidney"
+path(DO:"COVID-19") -> a(NCIT:"Acute Glomerulonephritis")
+path(DO:"COVID-19") -> a(NCIT:"Inflammatory Infiltrate")
+path(DO:"COVID-19") -> a(NCIT:"Lymphocytic Infiltrate")
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy
+
+SET Support = "In the heart, H&E stained parenchymal dissociation and myocyte vacuolization in the upper part of the image (M); rare SARS-CoV-2 traces observed in the endocardium (N, arrows); occasional foci of interstitial macrophages labeled by the CD68 antibody (O, arrowheads), rare subepicardial T-lymphocyte (P, arrows) and B-lymphocyte (Q, arrowheads) infiltrates revealed by CD3 and CD20 reactions in the upper and lower parts of the images, respectively; CD42b antibody marks focal and sporadic capillary microthrombi (R)."
+SET MeSHAnatomy = "Heart"
+path(DO:"COVID-19") -> bp(FIXME:"parenchymal dissociation")
+path(DO:"COVID-19") -> bp(FIXME:"myocyte vacuolization")
+path(DO:"COVID-19") -> a(FIXME:"interstitial macrophage foci")
+path(DO:"COVID-19") -> a(NCIT:"Lymphocytic Infiltrate")
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy
+
+SET Support = "In the brain, H&E revealed diffuse neuronal loss and cortical edema characterized by spongiosis (S); very rare SARS-CoV-2-positive cells detected in the pons (T); amoeboid microglial cells and several microglial nodules identified by the CD68 antibody, mainly in the brainstem (U); rare T and B lymphocytes are observed in the perivascular spaces (V) and in some nodules (W); frequent capillary microthrombi are observed in the brainstem (X)."
+SET MeSHAnatomy = "Brain"
+path(DO:"COVID-19") -| a(MESH:Neurons)
+path(DO:"COVID-19") -> path(DO:"brain edema")
+path(DO:"COVID-19") -> a(NCIT:Spongiosis)
+UNSET MeSHAnatomy
+SET Anatomy = "perivascular space"
+path(DO:"COVID-19") -> a(MESH:"B-Lymphocytes")
+path(DO:"COVID-19") -> a(MESH:"T-Lymphocytes")
+UNSET Anatomy
+SET MeSHAnatomy = "Brain Stem"
+path(DO:"COVID-19") -> a(CELL:"mature microglial cell")
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy 
+
+SET Support = "The lung samples showed: (1) severe capillary congestion, edema, and DAD with cytopathic alterations in type-2 pneumocytes; (2) SARS-CoV-2 positivity in alveolar pneumocytes of five cases, ubiquitous alveolar macrophages, interstitial pneumonia with fibrosis and moderate to severe inflammatory septal infiltrates (mainly T-lymphocytes, present in all cases), and frequent superimposed bacterial infection; and (3) microthrombi and frequent clots inside the vessels in seven cases."
+SET Cell = "type II pneumocyte"
+path(DO:"COVID-19") -> path(DO:"pulmonary edema")
+UNSET Cell
+SET Anatomy = "pulmonary capillary"
+path(DO:"COVID-19") -> path(FIXME:"pulmonary vascular congestion")
+path(DO:"COVID-19") -> path(FIXME:"diffuse alveolar damage")
+path(DO:"COVID-19") -> path(DO:"acute interstitial pneumonia")
+path(DO:"COVID-19") -> path(DO:"pulmonary fibrosis")
+path(DO:"COVID-19") -> a(NCIT:"Inflammatory Infiltrate")
+path(DO:"COVID-19") -> path(MESH:"Bacterial Infections")
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET Anatomy 
+
+SET Support = "Findings from the kidneys included: (1) congestion and acute glomerular alterations in three cases; (2) SARS-CoV-2 positivity in the tubular epithelium and the capillary endothelium in three cases, and moderate to severe inflammatory infiltrates (T-lymphocytes and B-lymphocytes in the majority of cases, while macrophages were quite rare in all but one case); and (3) microthrombi and clots in two cases."
+SET MeSHAnatomy = "Kidney"
+path(DO:"COVID-19") -> path(FIXME:"pulmonary vascular congestion")
+path(DO:"COVID-19") -> path(FIXME:"acute glomerular alteration")
+SET Cell = {"B cell", "T cell", "macrophage"}
+path(DO:"COVID-19") -> a(NCIT:"Inflammatory Infiltrate")
+UNSET Cell
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy 
+
+SET Support = "The heart samples revealed: (1) hypoxic myocytic injuries; (2) sporadic SARS-CoV-2 traces in the endothelial and endocardial cells of one case, perivascular–parenchymal inflammatory infiltrates (prominent only in two cases) characterized by predominant macrophages with no evidence of T-lymphocytes and rare B-lymphocytes; and (3) relevant microthrombi in only one case."
+SET MeSHAnatomy = "Heart"
+path(DO:"COVID-19") -> path(FIXME:"hypoxic myocytic injury")
+path(DO:"COVID-19") -> a(NCIT:"Inflammatory Infiltrate")
+path(DO:"COVID-19") -> a(MESH:Macrophages)
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET MeSHAnatomy 
+
+SET Support = "The neuropathological hallmarks were: (1) diffuse cortical edema due to extreme hypoxia with cortical swelling, spongiosis, and severe neuronal rarefaction in the cerebral cortex and hippocampus; (2) very limited traces of SARS-CoV-2 antigens in pontine neurons of one case, perivascular and parenchymal inflammatory infiltrates characterized by the enhancement of CD68-positive amoeboid cells (activated microglia), which are more abundant in the pons (all cases) than in the frontal cortex, with a tendency to nodular aggregation and neuronophagia, and very scant B–T lymphocytes as vascular cuffing or inside few nodules; and (3) frequent microthrombi in the frontal lobe (eight cases) and pons (six cases) with rare ischemic rarefaction of the surrounding tissue."
+SET MeSHAnatomy = {"Cerebral Cortex", "Hippocampus"}
+path(DO:"COVID-19") -> path(MESH:"Brain Edema")
+path(DO:"COVID-19") -> path(MESH:Hypoxia)
+path(DO:"COVID-19") -> path(NCIT:Spongiosis)
+UNSET MeSHAnatomy
+SET MeSHAnatomy = "Pons"
+path(DO:"COVID-19") -> a(NCIT:"Inflammatory Infiltrate")
+UNSET MeSHAnatomy
+SET MeSHAnatomy = "Neurons"
+path(DO:"COVID-19") -> bp(GO:phagocytosis)
+UNSET MeSHAnatomy
+path(DO:"COVID-19") -> path(FIXME:"vascular cuffing")
+SET MeSHAnatomy = {"Frontal Lobe", "Pons","Blood Vessels"}
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+path(DO:"COVID-19") -> a(NCIT:"Tissue Rarefaction")
+UNSET MeSHAnatomy
+
+SET Support = "The lungs frequently showed emphysema, dystelectasis, and anthracosis"
+SET MeSHAnatomy = "Lung"
+path(DO:"COVID-19") -> path(DO:"pulmonary emphysema")
+path(DO:"COVID-19") -> path(FIXME:dystelectasis)
+path(DO:"COVID-19") -> path(DO:anthracosis)
+UNSET MeSHAnatomy
+
+SET Support = "The kidneys showed glomerulosclerosis and arteriolosclerosis."
+SET MeSHAnatomy = "Kidney"
+path(DO:"COVID-19") -> path(DO:glomerulosclerosis)
+path(DO:"COVID-19") -> path(DO:arteriolosclerosis)
+UNSET MeSHAnatomy
+
+SET Support = "The heart samples presented with myocardiosclerosis, lipofuscin deposits, and fatty infiltrates."
+SET MeSHAnatomy = "Heart"
+SET Anatomy = "myocardium"
+path(DO:"COVID-19") -> path(MESH:Fibrosis)
+UNSET Anatomy
+path(DO:"COVID-19") -> a(MESH:Lipofuscin)
+path(DO:"COVID-19") -> a(FIXME:"fatty infiltrate")
+UNSET MeSHAnatomy
+
+SET Support = "The brain samples showed different degrees of atrophy and AD pathology (six cases showing cortical neuritic plaques associated with microglial activation and astrogliosis with reactive astrocytes), and small-vessel disease (SVD), including enlarged perivascular spaces, arteriolosclerosis, myelin loss, hemosiderin leakage, and microbleeds (five cases)."
+SET MeSHAnatomy = "Brain"
+path(DO:"COVID-19") -> path(MESH:Atrophy)
+path(DO:"COVID-19") -> path(MESH:"Plaque, Amyloid")
+path(MESH:"Plaque, Amyloid") -> bp(GO:"microglial cell activation")
+SET Cell = "astrocyte"
+path(DO:"COVID-19") -> path(MESH:Gliosis)
+UNSET Cell
+path(DO:"COVID-19") pos path(MESH:"Cerebral Small Vessel Diseases")
+path(DO:"COVID-19") -> path(DO:arteriolosclerosis)
+path(DO:"COVID-19") -| path(HP:"CNS demyelination")
+path(DO:"COVID-19") -> path(DO:hemosiderosis)
+path(DO:"COVID-19") -> path(FIXME:"cerebral microbleeds")
+
+SET Support = "The presence of T-B lymphocytes as a whole (sum of scores) was similar in the lungs and kidneys (Figure 2A; Table 3), albeit with a significantly greater presence of T lymphocytes in the lungs (p = 0.020; Figure 2B)."
+SET MeSHAnatomy = "Lung"
+path(DO:pneumonia) pos a(MESH:"T-Lymphocytes")
+UNSET MeSHAnatomy
+
+SET Support = "The heart had relevant inflammatory foci in only two cases, characterized by the presence of macrophages (Figure 1O), the substantial absence of lymphocytes, and very rare SARS-CoV-2 traces in the endothelium–endocardium (Figure 1N)."
+path(DO:"COVID-19") -> a(CELL:macrophage, loc(MESH:Heart))
+
+SET Support = "On the other hand, the significantly greater microglial activation in the pons of COVID-19 cases (Figure 4B), associated with traces of viral antigen (Figure 1T), emerged as a specific topographical phenomenon within the brain (p = 0.017; Figure 4B)."
+SET MeSHAnatomy = "Pons"
+path(DO:"COVID-19") -> bp(GO:"microglial cell activation")
+UNSET MeSHAnatomy
+
+SET Support = "Microthrombosis assumed a clinico-pathological relevance only in the lungs, with a significant prevalence of pulmonary microthrombi in COVID-19 cases (Figure 5; p = 0.023) in comparison with non-COVID pneumonia"
+path(DO:"COVID-19") -> path(FIXME:microthrombus)
+UNSET Disease
+UNSET Technique 
+UNSET Species 
+UNSET PublicationType
+UNSET PublicationStatus
+UNSET Section
+UNSET Citation

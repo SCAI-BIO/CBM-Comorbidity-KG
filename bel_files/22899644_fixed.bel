@@ -1,0 +1,504 @@
+SET DOCUMENT Name = "22899644.bel"
+SET DOCUMENT Authors = "Priya S"
+SET DOCUMENT ContactInfo = "priya@causalitybiomodels.com"
+SET DOCUMENT Description = "COMMUTE-WP4-BEL_curation"
+
+SET DOCUMENT Licenses = "Private Ownership to Fraunhofer Institute SCAI"
+SET DOCUMENT Copyright = "Copyright © 2024 Fraunhofer Institute SCAI, All rights reserved"
+SET DOCUMENT Version = "2.0"
+
+##################################################################################
+# NAMESPACES Section
+##################################################################################
+
+DEFINE NAMESPACE ADO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns"
+DEFINE NAMESPACE BRCO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns"
+DEFINE NAMESPACE NIFT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns"
+DEFINE NAMESPACE HGNC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns"
+DEFINE NAMESPACE MGI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns"
+DEFINE NAMESPACE RGD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns"
+DEFINE NAMESPACE GFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns"
+DEFINE NAMESPACE SCOMP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns"
+DEFINE NAMESPACE SFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns"
+DEFINE NAMESPACE CELL AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns"
+DEFINE NAMESPACE HP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns"
+DEFINE NAMESPACE CHEBI AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20230925.belns"
+DEFINE NAMESPACE DRUGBANK AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns"
+DEFINE NAMESPACE INTERPRO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns"
+DEFINE NAMESPACE PFAM AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns"
+DEFINE NAMESPACE DO AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns"
+DEFINE NAMESPACE GO AS URL 	"https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns"
+DEFINE NAMESPACE GOBP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns"
+DEFINE NAMESPACE GOCC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns"
+DEFINE NAMESPACE MESH AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns"
+DEFINE NAMESPACE MESHC AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns"
+DEFINE NAMESPACE MESHD AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns"
+DEFINE NAMESPACE MESHA AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns"
+DEFINE NAMESPACE MESHCS AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns"
+DEFINE NAMESPACE NCBIGENE AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns"
+DEFINE NAMESPACE COVID AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns"
+DEFINE NAMESPACE NCIT AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns"
+DEFINE NAMESPACE MESHPP AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns"
+DEFINE NAMESPACE TAX  AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns"
+DEFINE NAMESPACE UNIPROT AS PATTERN "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\.\d+)?$"
+#DEFINE NAMESPACE PUBCHEM AS PATTERN "^\d+$"
+#DEFINE NAMESPACE dbSNP AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE FIXME AS LIST {"function of regulatory T cells", "protein nitration", "alpha-synuclein aggregation", "Polysaccharide A", "17beta-estradiol","accumulation of abnormal proteins","paralytic experimental autoimmune encephalomyelitis"}
+
+##################################################################################
+# ANNOTATIONS Section
+##################################################################################
+DEFINE ANNOTATION Anatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno"
+DEFINE ANNOTATION CellLine AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno"
+DEFINE ANNOTATION Cell AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno"
+DEFINE ANNOTATION Disease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno"
+DEFINE ANNOTATION MeSHAnatomy AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno"
+DEFINE ANNOTATION MeSHDisease AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno"
+DEFINE ANNOTATION Species AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno"
+#DEFINE ANNOTATION TextLocation AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+DEFINE ANNOTATION BioAssay AS URL   "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno"
+DEFINE ANNOTATION CovidAccession AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno"
+DEFINE ANNOTATION Gender AS URL   "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno"
+
+# Document Annotations #
+DEFINE ANNOTATION PublicationType AS LIST {"Review", "Research"}
+DEFINE ANNOTATION PublicationStatus AS LIST {"Preprint", "Published"}
+DEFINE ANNOTATION Section AS LIST {"Full Text", "Abstract", "Results"}
+
+DEFINE ANNOTATION Custom_Cell AS LIST {"matured dendritic cell"}
+DEFINE ANNOTATION Timeline AS LIST {"6 months treatment"}
+DEFINE ANNOTATION Mouse_Type AS LIST {"Itgal -/-"}
+DEFINE ANNOTATION Disease_Severity AS LIST {"Mild", "less severe"}
+
+SET Citation = {"PubMed", "Wiley Interdiscip Rev Syst Biol Med . 2013 Mar-Apr;5(2):153-80. doi: 10.1002/wsbm.1187. Epub 2012 Aug 15.","22899644"} 
+SET PublicationType = "Review" 
+SET PublicationStatus = "Published" 
+SET Section = "Full Text"  
+
+SET Support = "Sustained inflammation is observed in many of the neurodegenerative diseases including AD, PD, and amyotrophic lateral sclerosis (ALS)."
+path(DO:"Alzheimer's disease") -> bp(GO:"inflammatory response")
+path(DO:"Parkinson's disease") -> bp(GO:"inflammatory response")
+path(DO:"amyotrophic lateral sclerosis") -> bp(GO:"inflammatory response")
+
+SET Support = "However, under injury and pathological conditions including specific pathogen invasion and abnormal protein accumulation, microglia become ‘activated’ and promote adaptive immune responses for various neurodegenerative diseases."
+SET MeSHDisease = "Neurodegenerative Diseases"
+a(NCIT:Injury) -> bp(GO:"microglial cell activation") 
+bp(GO:"entry of bacterium into host cell") -> bp(GO:"microglial cell activation") 
+a(FIXME:"accumulation of abnormal proteins") -> bp(GO:"microglial cell activation") 
+bp(GO:"microglial cell activation") ->  bp(GO:"adaptive immune response")
+UNSET MeSHDisease
+
+SET Support = "Dendritic cells (DCs) are the key antigen presenting cells (APCs) within the CNS. Since the first discovery of DCs in the CNS,28 they have been considered as major players in the development and maintenance of CNS inflammation."
+SET MeSHAnatomy = "Central Nervous System"
+a(MESH:"Dendritic Cells") reg bp(GO:"inflammatory response")
+UNSET MeSHAnatomy
+
+SET Support = "In the healthy CNS, DCs are rarely detected. However, in response to local inflammation induced by autoimmunity, infection,trauma, or neurodegeneration, DCs accumulate significantly in the brain and spinal cord."
+path(MESH:Autoimmunity) -> bp(GO:"inflammatory response")
+path(MESH:Infection) ->  bp(GO:"inflammatory response")
+path(HP:Neurodegeneration) -> bp(GO:"inflammatory response")
+SET MeSHAnatomy = {"Brain", "Spinal Cord"}
+bp(GO:"inflammatory response") -> a(MESH:"Dendritic Cells")
+UNSET MeSHAnatomy
+
+SET Support = "Under healthy conditions, astrocytes serve as supporters of normal neuronal functioning. Similar to microglia, activated astrocytes respond to various harmful conditions, including inflammation, stroke, brain tumors, and neurodegenerative diseases."
+a(MESH:Astrocytes) reg bp(GO:"nervous system process")
+bp(GO:"inflammatory response") -> bp(GO:"astrocyte activation")
+path(MESH:Stroke) -> bp(GO:"astrocyte activation")
+path(DO:"neurodegenerative disease") -> bp(GO:"astrocyte activation")
+bp(GO:"inflammatory response") -> bp(GO:"astrocyte activation")
+path(MESH:Stroke) -> bp(GO:"astrocyte activation")
+
+SET Support = "Astrocytes express high levels of Tolllike receptor-3 (TLR3) but low levels of other TLRs, leading to pro-inflammatory responses by producing tumor necrosis factor (TNF), interleukin 6 (IL6), and other cytokines."
+SET MeSHAnatomy = "Astrocytes"
+surf(p(HGNC:TLR3)) -> p(HGNC:TNF)
+surf(p(HGNC:TLR3)) -> p(HGNC:IL6)
+p(HGNC:TNF) -> bp(GO:"inflammatory response")
+p(HGNC:IL6) -> bp(GO:"inflammatory response")
+UNSET MeSHAnatomy
+
+SET Support = "Astrocytes also generate high levels of inducible nitric oxide synthase during CNS infections, epilepsy, EAE, and MS."
+SET MeSHDisease = {"Central Nervous System Infections", "Epilepsy", "Encephalomyelitis, Autoimmune, Experimental", "Multiple Sclerosis"}
+a(MESH:Astrocytes) -> p(HGNC:NOS2)
+UNSET MeSHDisease
+
+SET Support = "The transition of macrophages from the M1 to M2 stage is an indication of inflammatory pathology,1 and a high M1/M2 macrophage ratio has significant implications for CNS injury.62 An altered M1/M2 equilibrium promotes CNS inflammation, and an imbalance toward M1 promotes relapsing EAE"
+SET MeSHAnatomy = "Central Nervous System"
+a(CELL:"inflammatory macrophage") -- bp(GO:"inflammatory response") 
+a(CELL: "alternatively activated macrophage") -- bp(GO:"inflammatory response") 
+a(CELL:"inflammatory macrophage") -> a(NCIT:"Nervous System Injury")
+UNSET MeSHAnatomy
+
+SET Support = "For instance, the loss of BBB integrity, the so-called ‘leakiness’ in the spinal cord, is common to EAE."
+SET MeSHAnatomy = "Spinal Cord"
+path(MESH:"Encephalomyelitis, Autoimmune, Experimental") -| bp(GO:"maintenance of permeability of blood-brain barrier")
+UNSET MeSHAnatomy
+
+SET Support = "As inflammation can induce a change of BBB integrity, compromised integrity of the BBB might indeed contribute to the initiation and/or progression of AD, PD, epilepsy, or cerebral palsy."
+SET MeSHDisease = {"Alzheimer Disease", "Parkinson Disease", "Epilepsy", "Cerebral Palsy"}
+bp(GO:"inflammatory response") -| bp(GO:"maintenance of permeability of blood-brain barrier")
+UNSET MeSHDisease
+
+SET Support = "FOXP3 was further considered as a specific intracellular marker of human Tregs(Figure 1), because mutations in FOXP3 were shown to cause human immune dysregulation, polyendocrinopathy, enteropathy, and X-linked (IPEX)-like syndrome genetically."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+p(HGNC:FOXP3, var ("?")) pos  path(DO:"immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome")
+UNSET MeSHAnatomy
+
+SET Support = "IPEX patients suffer from a severe autoimmune disease and allergy, similar to phenotypes in rodents following the depletion of CD4+CD25+ Tregs. CD25 deficiency also causes IPEX-like syndrome."
+path(DO:"immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome") -> path(MESH:"Autoimmune Diseases")
+path(DO:"immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome") -> path(HP:Allergy)
+p(HGNC:IL2RA) neg path(DO:"immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome")
+
+SET Support = "Recently, we and others have shown that glycoprotein A repetitions predominant [GARP, also known as leucine-rich repeat protein 32 (LRRC32)] is important for the suppressor function and the regulation of FOXP3 expression in human Tregs." 
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+p(HGNC:LRRC32) -> bp(GO:"regulation of regulatory T cell differentiation")
+p(HGNC:LRRC32) reg p(HGNC:FOXP3)
+UNSET MeSHAnatomy
+
+SET Support = "GARP is a receptor for latent TGF-β on the surface of activated human Tregs and may be necessary for the ability of Tregs to activate TGF-β upon T cell receptor (TCR) stimulation."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+complex(p(HGNC:LRRC32),p(HGNC:TGFB1)) -> act(p(HGNC:TGFB1))
+act(p(HGNC:TGFB1)) reg bp(GO:"immune response")
+UNSET MeSHAnatomy
+
+SET Support = "More recently, GATA3, a previously recognized Th2 (T cell subset 2) master regulator, has also been found to play an essential role in the suppressive function of Tregs by controlling Foxp3 expression."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+p(HGNC:GATA3) -> p(HGNC:FOXP3)
+p(HGNC:FOXP3) -> bp(GO:"regulation of regulatory T cell differentiation")
+UNSET MeSHAnatomy
+
+SET Support = "Except for genes positive to the suppressive function of Tregs, the S1p receptor 1 (S1pr1) blocks the differentiation of murine thymic Treg precursors and inhibits the function of mature Tregs"
+SET MeSHAnatomy = "Thymus Gland"
+p(MGI:S1pr1) -| bp(GO:"regulatory T cell differentiation")
+p(MGI:S1pr1) -| bp(GO:"positive regulation of T cell differentiation")
+UNSET MeSHAnatomy
+
+SET Support = "IL2 is also important for the proliferation and survival of Tregs."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+p(HGNC:IL2) reg bp(GO:"cell proliferation")
+UNSET MeSHAnatomy
+
+SET Support = "However, others have shown that Tregs might inhibit the proliferation of conventional CD4+ T cells by competing for the consumption of IL2, because Tregs express a higher level of the IL-2Rα chain (also known as CD25)"
+a(MESH:"T-Lymphocytes, Regulatory") -| bp(GO:"CD4-positive, alpha-beta T cell proliferation")
+a(MESH:"T-Lymphocytes, Regulatory") -> surf(p(HGNC:IL2RA))
+ 
+SET Support = "Another important cytokine in the context of Tregs is IL10, which is strongly secreted by a special subset of T cells with regulatory activity, the so-called Tr1 cells."
+a(CELL:"Tr1 cell") -> sec(p(HGNC:IL10))
+
+SET Support = "Tr1 cells, which are often present within the intestinal mucosa, do not express Foxp3, and their surface markers are not yet defined. However, they produce high levels of IL10 and TGF-β."
+a(CELL:"Tr1 cell") -> sec(p(HGNC:IL10))
+a(CELL:"Tr1 cell") -> sec(p(HGNC:TGFB1))
+
+SET Support = "TGF-β has been reported to induce FOXP3 expression in human or murine CD4+CD25− conventional T cells."
+p(HGNC:TGFB1) -> p(HGNC:FOXP3)
+
+SET Support = "Expression of granzyme B in Tregs has been found in a tumor microenvironment, and these Tregs can kill NK cells in a granzyme-Bdependent manner."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+bp(MESH:"Tumor Microenvironment") -> p(HGNC:GZMB)
+p(HGNC:GZMB) -> deg(a(CELL:"natural killer cell"))
+UNSET MeSHAnatomy
+
+SET Support = "For example, CTLA4 on Tregs can downregulate the costimulatory molecules CD80 and CD86 on both human and murine DCsin vitro194–197 (Figure 1), although in some studies, the engagement of CTLA4 in the suppressive function of Tregs against CD8+ T cells has not been observed."
+SET MeSHAnatomy = {"T-Lymphocytes, Regulatory","Dendritic Cells"}
+SET Species = "9606"
+p(HGNC:CTLA4) -| surf(p(HGNC:CD80))
+p(HGNC:CTLA4) -| surf(p(HGNC:CD86))
+UNSET Species
+SET Species = "10090"
+p(MGI:Ctla4) -| surf(p(MGI:Cd80))
+p(MGI:Ctla4) -| surf(p(MGI:Cd86))
+UNSET Species
+UNSET MeSHAnatomy
+
+SET Support = "Tregs either inhibit the activation of DCs by binding LAG3 to MHC II or restrict the access of effector T cells via elongating the interaction between Neuropilin-1 (Nrp1) expressed on Tregs and immature DCs."
+SET Species = "9606"
+a(MESH:"T-Lymphocytes, Regulatory") -> complex(p(HGNC:LAG3), complex(GO:"MHC class II protein complex"))
+complex(p(HGNC:LAG3), complex(GO:"MHC class II protein complex")) -| bp(GO:"myeloid dendritic cell activation")
+
+SET Support = "Tregs can inhibit the costimulatory capability of DCs by CD39-mediated inactivation of extracellular ATP, which is an inducer of DC activation."
+p(HGNC:ENTPD1) -| a(HP:"ATP", loc(GO:"extracellular region"))
+a(HP:"ATP", loc(GO:"extracellular region")) -> bp(GO:"myeloid dendritic cell activation")
+a(MESH:"T-Lymphocytes, Regulatory") -| p(HGNC:ENTPD1)
+
+SET Support = "Schenk et al. have recently shown that ATP inhibits the generation and suppressive function of murine Tregs through the activation of purinergic P2X receptors"
+a(HP:"ATP") -> act(p(GFAM:"Purinergic receptors P2X"))
+act(p(GFAM:"Purinergic receptors P2X")) -| a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "Later reports have confirmed that CCL17 and CCL22 chemokines are related to the accumulation of Foxp3+ Tregs within the tumor microenvironment of early gastric cancer.2"
+SET Disease = "microinvasive gastric cancer"
+#synonym is early gastric cancer
+p(HGNC:CCL17) -> p(HGNC:FOXP3, loc(MESH:"Tumor Microenvironment"))
+p(HGNC:CCL22) -> p(HGNC:FOXP3, loc(MESH:"Tumor Microenvironment"))
+UNSET Disease
+
+SET Support = "Signaling of the chemokine CCL25 through its receptor CCR9 induces Tregs to migrate to the intestine in a chronic ileitis mouse model."
+complex(p(MGI:Ccr9), p(MGI:Ccl25)) -> a(MESH:"T-Lymphocytes, Regulatory", loc(MESH:"Intestine, Small"))
+
+SET Support = "More interestingly, enhanced expression of CCR6 has been observed in the spinal cord. CCR6 has recently been shown to be involved in the migration of Tregs."
+SET Species = "9606"
+SET MeSHAnatomy = "Spinal Cord"
+path(MESH:"Neurodegenerative Diseases") pos p(HGNC:CCR6)
+UNSET MeSHAnatomy
+
+SET Support = "Depletion of Tregs by treatment with antiCD25 antibodies following the induction of EAE has been found to cause significant enhancement of disease severity and mortality"
+SET MeSHDisease = {"Encephalomyelitis, Autoimmune, Experimental"}
+p(HGNC:IL2RA) -> a(MESH:"T-Lymphocytes, Regulatory")
+p(HGNC:IL2RA) -| path(MESH:Mortality)
+UNSET MeSHDisease
+
+SET Support = "Furthermore, adoptive transfer of Tregs significantly protects the progress of myelin oligodendrocyte glycoprotein (MOG)-induced EAE."
+a(MESH:"T-Lymphocytes, Regulatory") -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+p(HGNC:MOG) -- path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+
+SET Support = "The suboptimal suppressive function of Tregs in MS has been found to be related to decreased FOXP3 expression in Tregs from RR-MS patients"
+SET MeSHDisease = {"Multiple Sclerosis, Relapsing-Remitting"}
+p(HGNC:FOXP3) reg a(MESH:"T-Lymphocytes, Regulatory")
+UNSET MeSHDisease
+
+SET Support = "Subsequent studies have shown that the frequency of CD31 and CD45RA expression in newly thymic emigrating Tregs (the so-called naive Tregs) is decreased in the peripheral blood of RR-MS patients."
+SET Cell = "naive regulatory T cell"
+path(DO:"relapsing-remitting multiple sclerosis") neg p(HGNC:PECAM1)
+path(DO:"relapsing-remitting multiple sclerosis") neg p(HGNC:PTPRC)
+UNSET Cell
+
+SET Support = "For instance, two independent groups have shown that the CD58 risk allele results in the downregulation of FOXP3 and consequently causes the dysfunction of Tregs."
+p(HGNC:CD58, var("?")) neg p(HGNC:FOXP3)
+p(HGNC:FOXP3) reg a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "Absolute numbers of FOXP3 and CD4+ cells were low in the MS brain lesions, and Tregs were not detectable in 30% of the MS biopsies, despite the presence of CD4+ infiltrates."
+SET MeSHAnatomy = "Brain"
+path(DO:"multiple sclerosis") neg p(HGNC:FOXP3)
+path(DO:"multiple sclerosis") neg p(HGNC:CD4)
+UNSET MeSHAnatomy
+
+SET Support = "In contrast, in another study, Tregs were detectable in all the CSF samples, and Tregs with a CD45R high CD95 high phenotype previously shown to be highly apoptosis sensitive were enriched in the CSF compared with the peripheral blood of the MS patients."
+SET MeSHAnatomy = "Cerebrospinal Fluid"
+path(DO:"multiple sclerosis") -> a(MESH:"T-Lymphocytes, Regulatory")
+UNSET MeSHAnatomy
+
+SET Support = "As the migratory capability across the intact BBB is impaired in RR-MS, a broader functional deficiency of Tregs might contribute to the development of early CNS lesions."
+path(DO:"relapsing-remitting multiple sclerosis") neg bp(GO:"maintenance of permeability of blood-brain barrier")
+
+SET Support = "Patients with RR-MS have a strikingly reduced number of CD39 Tregs in the blood; this might contribute to the defects of Tregs in MS."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+path(DO:"relapsing-remitting multiple sclerosis") -| surf(p(HGNC:ENTPD1))
+UNSET MeSHAnatomy
+
+SET Support = "The frequency and the suppressive capability of the CD4+CD25+CD127lowFOXP3+CD39+ Tregs are significantly lower in RR-MS than in healthy controls."
+path(DO:"relapsing-remitting multiple sclerosis") neg a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "Therefore, CD4+CD25+CD127lowFOXP3+CD39+ Tregs play an important role in constraining pathogenic Th17 cells and are impaired in MS patients; this in turn leads to an inability to control Th17-mediated neurodegenerative diseases."
+a(MESH:"T-Lymphocytes, Regulatory") reg a(MESH:"Th17 Cells")
+path(DO:"relapsing-remitting multiple sclerosis") neg a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"Th17 Cells") -> path(DO:"neurodegenerative disease")
+
+SET Support = "The earlier development of EAE is associated with a defect of Tregs and the downregulation of Foxp3."
+path(MESH:"Encephalomyelitis, Autoimmune, Experimental") -| a(MESH:"T-Lymphocytes, Regulatory") 
+path(MESH:"Encephalomyelitis, Autoimmune, Experimental") neg p(HGNC:FOXP3)
+
+SET Support = "EAE has been reported to be exacerbated in the absence of LFA-1, and this is correlated with a decrease in the steady-state numbers of Tregs in the LFA-1−/− mice."
+p(HGNC:ITGAL) neg path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+UNSET Species
+SET Species = "10090"
+SET Mouse_Type = "Itgal -/-"
+p(MGI:Itgal) -> a(MESH:"T-Lymphocytes, Regulatory")
+UNSET Mouse_Type
+UNSET Species
+
+SET Support = "Blocking the production of the octapeptide angiotensin II (AII) or inhibiting AII signaling suppresses autoreactive Th1 and Th17 cells and promotes antigen-specific Foxp3+Tregs with an inhibition of the canonical nuclear factor κ-B (NFKB) transcription factor complex and an activation of the alternative NFKB pathway."
+a(MESH:"Angiotensin II") -> a(MESH:"Th1 Cells")
+a(MESH:"Angiotensin II") -> a(MESH:"Th17 Cells")
+a(MESH:"Angiotensin II") -| a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"Angiotensin II") -> complex(GO:"NF-kappaB complex")
+a(MESH:"Angiotensin II") -| bp(GO:"NIK/NF-kappaB signaling")
+
+SET Support = "Treatment with a blocker of AII production induces abundant Foxp3+Tregs with sufficient potency to reverse paralytic EAE."
+a(MESH:"Angiotensin II") -| a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"T-Lymphocytes, Regulatory") -| path(FIXME:"paralytic experimental autoimmune encephalomyelitis")
+ 
+SET Support = "CD46-costimulated human conventional CD4+ T cells can induce a Tr1 phenotype with considerable amounts of IL10 production."
+SET MeSHAnatomy = "CD4-Positive T-Lymphocytes"
+p(HGNC:CD46) -> a(CELL:"Tr1 cell")
+a(CELL:"Tr1 cell") -> p(HGNC:IL10)
+UNSET MeSHAnatomy
+
+SET Support = "More interestingly, the loss of IL10 is only associated with costimulation by CD46, but not by CD28."
+p(HGNC:CD46) -> bp(GO:"CD4-positive, alpha-beta T cell activation")
+bp(GO:"CD4-positive, alpha-beta T cell activation") -| p(HGNC:IL10)
+
+SET Support = "The primary circulating serine protease inhibitor α-1-antitrypsin can prevent signs of EAE in mice by increasing the population of Tregs and reducing the secretion of MOG-induced pro-inflammatory cytokines."
+SET Species = "10090"
+p(HGNC:SERPINA1) -> a(MESH:"T-Lymphocytes, Regulatory")
+p(MGI:Mog) -> bp(GO:"cytokine secretion")
+p(HGNC:SERPINA1) -| bp(GO:"cytokine secretion")
+p(HGNC:SERPINA1) -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+
+SET Support = "The repetitive administration of pertussis toxin, the major virulence factor of Bordetella pertussis, promotes the development of Tregs and prevents mice from developing EAE.2"
+a(TAX:"Bordetella pertussis") -> a(MESH:"T-Lymphocytes, Regulatory")
+a(TAX:"Bordetella pertussis") -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+
+SET Support = "Intramuscular treatment of IFN-β − 1α in RRMS subjects significantly increased both the percentage of NK cells and FOXP3 mRNA expression compared with untreated RR-MS and healthy controls."
+SET MeSHDisease = "Multiple Sclerosis, Relapsing-Remitting"
+p(MGI:Ifnb1) -> a(MESH:"Killer Cells, Natural")
+p(MGI:Ifnb1) -> r(HGNC:FOXP3)
+UNSET MeSHDisease
+
+SET Support = "Administration of a secreted phospholipase A2- IID-Fc fusion protein, which is selectively produced by Tregs, inhibits disease development in murine models of colitis and MS via promoting the differentiation of Tregs and mediating Treg function"
+a(MESH:"T-Lymphocytes, Regulatory") -> sec(p(MGI:Pla2g2d))
+sec(p(MGI:Pla2g2d)) -| path(DO:colitis)
+sec(p(MGI:Pla2g2d)) -| path(DO:"multiple sclerosis")
+sec(p(MGI:Pla2g2d)) -> bp(GO:"regulatory T cell differentiation")
+sec(p(MGI:Pla2g2d)) -> a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "17β-Estradiol (also known as E2) can exert a protective effect against EAE by upregulating the expression of Foxp3 in Tregs via the α-receptor Esr1."
+SET MeSHAnatomy = "T-Lymphocytes, Regulatory"
+a(FIXME:"17beta-estradiol") -> p(MGI:Esr1)
+p(MGI:Esr1) -> p(MGI:Foxp3)
+a(FIXME:"17beta-estradiol") -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+
+SET Support = "E2 can also suppress EAE by the upregulation of programmed death 1 (PD1) expression in Tregs."
+a(FIXME:"17beta-estradiol") pos p(HGNC:PDCD1)
+p(HGNC:PDCD1) -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+UNSET MeSHAnatomy
+
+SET Support = "Administration of E2 at pregnancy levels enhances the frequency of Tregs cells in EAE models"
+a(FIXME:"17beta-estradiol") -> a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "Treatment with glucocorticoids in patients with MS during relapse significantly increased the percentage of Tregs and plasma IL10 and the FOXP3/CD3 ratio in peripheral blood"
+SET MeSHDisease = "Multiple Sclerosis"
+a(HP:glucocorticoid) -> a(MESH:"T-Lymphocytes, Regulatory")
+SET MeSHAnatomy = "Plasma"
+a(HP:glucocorticoid) -> p(HGNC:IL10)
+UNSET MeSHAnatomy
+a(HP:glucocorticoid) -> p(HGNC:FOXP3)
+UNSET MeSHDisease
+
+SET Support = "Interestingly, treatment with erythropoietin modulates the immune balance in both the peripheral nervous system and the inflamed spinal cord by promoting the expansion of Tregs, by inhibiting Th17 polarization, and by abrogating proliferation of the antigenpresenting DCs in EAE (Figure 3(a))."
+SET MeSHDisease = "Encephalomyelitis, Autoimmune, Experimental"
+a(MESH:Erythropoietin) reg a(MESH:"Peripheral Nervous System")
+SET MeSHAnatomy = "Spinal Cord"
+a(MESH:Erythropoietin) reg bp(GO:"inflammatory response")
+a(MESH:Erythropoietin) -> a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:Erythropoietin) -| bp(GO:"T-helper 17 cell differentiation")
+a(MESH:Erythropoietin) -| bp(GO:"dendritic cell proliferation")
+UNSET MeSHAnatomy
+UNSET MeSHDisease
+
+SET Support = "Administration of VIP to EAE mice significantly ameliorates the progression of the disease by inducing the expansion of Tregs both in the periphery and in the nervous system262 (Figure 3(a))."
+SET MeSHAnatomy = "Peripheral Nervous System"
+a(MESH:"Vasoactive Intestinal Peptide") -> a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"Vasoactive Intestinal Peptide") -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+UNSET MeSHAnatomy
+UNSET Species
+
+SET Support = "Recently, midkine, which is also known as neurite-growth-promoting factor 2 in humans and is encoded by the gene for MDK, a heparin-binding growth factor, has been shown to decrease the Treg population in vitro in a dose-dependent manner by suppression of signal transducer and activator of transcription 5 (STAT5) phosphorylation263 (Figure 3(a))."
+SET Species = "9606"
+p(HGNC:MDK) -| a(MESH:"T-Lymphocytes, Regulatory")
+p(HGNC:MDK) -| p(HGNC:STAT5A, pmod(Ph))
+
+SET Support = "Tregs and naive conventional CD4+ T cells from healthy people have recently been shown to express equal numbers of voltage-gated K(V)1.3 channels, although Tregs have a greater membrane surface and, consequently, lower channel density than naive conventional CD4+ T cells."
+a(MESH:"T-Lymphocytes, Regulatory") -> surf(a(MESH:"Kv1.3 Potassium Channel"))
+a(MESH:"CD4-Positive T-Lymphocytes") -> surf(a(MESH:"Kv1.3 Potassium Channel")) 
+
+SET Support = "A natural antioxidant, C-phycocyanin, has also been found to induce Tregs in vitro from the peripheral blood of MS patients and consequently ameliorates the disease progress; C-phycocyanin can also ameliorate EAE clinical symptoms in Lewis rats."
+a(MESH:Phycocyanin) -> a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"T-Lymphocytes, Regulatory") -| path(DO:"multiple sclerosis")
+UNSET Species
+SET Species = "10116"
+a(MESH:Phycocyanin) -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+UNSET Species
+
+SET Support = "A 6-month treatment of glatiramer acetate in patients with RR-MS reconstituted naive Tregs and increased total Treg numbers with a concomitant reversion of the Treg defect266 (Figure 3(b))."
+SET Species = "9606"
+SET MeSHDisease = "Multiple Sclerosis, Relapsing-Remitting"
+SET Timeline = "6 months treatment"
+a(MESH:"Glatiramer Acetate") -> a(MESH:"T-Lymphocytes, Regulatory")
+UNSET Timeline
+UNSET MeSHDisease
+UNSET Species
+
+SET Support = "Moreover, inhibition of Foxp3 expression by nitric oxide has been observed in MBP-primed murine T cells via soluble guanylyl-cyclase-mediated production of cGMP."
+SET Species = "10090"
+SET MeSHAnatomy = "T-Lymphocytes"
+a(MESH:"Nitric Oxide") -| p(MGI:Foxp3)
+a(MESH:"Soluble Guanylyl Cyclase") -> a(MESH:"Cyclic GMP")
+UNSET MeSHAnatomy
+UNSET Species
+
+SET Support = "MiR-106b and miR-25 were previously shown to modulate TGF-β signaling through their action on CDKN1A/P21 and BCL2L11/Bim"
+m(HGNC:MIR106B) reg bp(GO:"transforming growth factor beta receptor signaling pathway")
+m(HGNC:MIR25) reg bp(GO:"transforming growth factor beta receptor signaling pathway")
+
+SET Support = "Larbi et al. reported that Tregs are reduced in mild AD."
+SET Disease_Severity = "Mild"
+path(DO:"Alzheimer's disease") neg a(MESH:"T-Lymphocytes, Regulatory") 
+UNSET Disease_Severity
+
+SET Support = "The relative frequency of Tregs increases with age in both AD and PD patients and in non-affected individuals."
+a(MESH:"T-Lymphocytes, Regulatory") pos bp(GO:aging)
+
+SET Support = "However, Treg suppressive activity is intensified in AD and PD patients with age, whereas the increase of suppressive activity does not reach significance for the non-affected elderly individuals compared with the young groups"
+path(DO:"Alzheimer's disease") neg bp(GO:"immune response")
+path(DO:"Parkinson's disease") neg bp(GO:"immune response")
+a(MESH:"T-Lymphocytes, Regulatory") -| bp(GO:"immune response")
+
+SET Support = "Dopamine has been shown to downregulate Treg function."
+a(HP:"dopamine") -| a(MESH:"T-Lymphocytes, Regulatory")
+
+SET Support = "Tregs have been found to mediate neuroprotection through the suppression of microglial stimulation,including that by aggregated nitrated α-synuclein in an animal model of PD."
+a(MESH:"T-Lymphocytes, Regulatory") -| bp(GO:"microglial cell activation")
+bp(GO:"microglial cell activation") -| bp(MESH:Neuroprotection)
+p(MGI:Snca, pmod(FIXME:"protein nitration")) -> bp(FIXME:"alpha-synuclein aggregation")
+bp(FIXME:"alpha-synuclein aggregation") -> bp(GO:"microglial cell activation")
+
+SET Support = "Reynolds et al. have shown Th17-mediated nigrostriatal dopaminergic neurodegeneration with Treg dysfunction in an animal model of PD immunized by nitrated α-synuclein."
+SET Anatomy = "nigrostriatal tract"
+SET MeSHAnatomy = "Dopaminergic Neurons"
+p(MGI:Snca, pmod(FIXME:"protein nitration")) -| a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"T-Lymphocytes, Regulatory") neg path(HP:Neurodegeneration)
+a(MESH:"Th17 Cells") -> path(HP:Neurodegeneration)
+UNSET Anatomy
+UNSET MeSHAnatomy
+
+SET Support = "Recently, Tregs have been reported to be significantly reduced in patients with ALS compared with normal controls."
+path(DO:"amyotrophic lateral sclerosis") neg a(MESH:"T-Lymphocytes, Regulatory")
+UNSET MeSHDisease
+
+SET Support = "Furthermore,significantly reduced CD25 high Tregs in sporadic ALS patients have been observed at a less severe stage but not at a more severe stage of the disease suggesting their early recruitment into the CNS area affected by primary neurodegeneration."
+SET MeSHDisease = "Amyotrophic Lateral Sclerosis"
+SET Disease_Severity = "less severe"
+path(DO:"amyotrophic lateral sclerosis") neg a(MESH:"T-Lymphocytes, Regulatory")
+path(HP:Neurodegeneration) -> tloc(a(MESH:"T-Lymphocytes, Regulatory"), fromLoc(MESH:Blood), toLoc(MESH:"Central Nervous System"))
+UNSET MeSHDisease
+UNSET Disease_Severity
+
+SET Support = "As has recently been shown, the adoptive transfer of CD3-activated Tregs attenuates astrogliosis and microglial inflammation with concomitant neuroprotection in a murine model of HIV-1-associated neurodegeneration."
+act(complex(p(HGNC:CD3D), p(HGNC:CD3E), p(HGNC:CD3G))) -> a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"T-Lymphocytes, Regulatory") -| path(HP:Astrocytosis)
+a(MESH:"T-Lymphocytes, Regulatory") -| bp(GO:"microglial cell activation")
+bp(GO:"microglial cell activation") pos bp(GO:"inflammatory response")
+a(MESH:"T-Lymphocytes, Regulatory") -> bp(MESH:Neuroprotection)
+
+SET Support = "Recently, the spore-forming component of indigenous intestinal microbiota, particularly, Clostridium species, has been shown to promote the induction of colonic Tregs."
+SET MeSHAnatomy = "Colon"
+a(TAX:Clostridium) -> a(MESH:"T-Lymphocytes, Regulatory")
+UNSET MeSHAnatomy
+
+SET Support = "Substantial changes in the composition of the microbiota are associated with IBDs, and changes in the individual species of microbial flora can shape the induction of T cell subsets, including Th17 and Tregs in the intestine."
+path(MESH:Dysbiosis) association path(DO:"inflammatory bowel disease")
+path(MESH:Dysbiosis) -> bp(GO:"T cell activation")
+path(MESH:Dysbiosis) -> a(MESH:"T-Lymphocytes, Regulatory")
+path(MESH:Dysbiosis) -> a(MESH:"Th17 Cells")
+
+SET Support = "Furthermore, oral administration with purified zwitterionic capsular polysaccharide A of Bacteroides fragilis protects mice against EAE prophylactically and therapeutically by inducing the conversion of naive CD4+ T cells into IL10-producing Foxp3+ Tregs."
+SET Species = "10090"
+a(FIXME:"Polysaccharide A") -- a(TAX:"Bacteroides fragilis")
+a(FIXME:"Polysaccharide A") -| path(MESH:"Encephalomyelitis, Autoimmune, Experimental")
+a(FIXME:"Polysaccharide A") -> a(MESH:"T-Lymphocytes, Regulatory")
+a(MESH:"T-Lymphocytes, Regulatory") -> p(HGNC:IL10)
+UNSET Species
+UNSET PublicationType
+UNSET PublicationStatus
+UNSET Section
+UNSET Citation

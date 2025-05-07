@@ -1,0 +1,6054 @@
+[
+ {
+  "document": {
+   "authors": "Sutrishna Sen",
+   "contact_info": "sutrishna.sen@causalitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "35054983.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PW",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHA",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PATHWAY",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pw/pw-20171007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "EFO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/efo/efo-20171206.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CMO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cmo/cmo-20171030.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CELL",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/cell/cell-20200623.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXMECHEM",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      ".."
+     ]
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "PATTERN",
+     "value": "^.*$",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20200623.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20200622.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "TextLocation",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "SARS_CoV2_Variant",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Delta",
+      "wild type"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Custom_CellLine",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "293T cell",
+      "293T cell overexpressing ACE2",
+      "K-562 cell overexpressing SDC"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Concentration",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "50 nM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Int J Mol Sci. 2022 Jan 12;23(2):796. doi: 10.3390/ijms23020796.",
+       "ref": "35054983",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "Overexpression of ACE2 in 293T-ACE2 cells increased the internalization of the WT spike."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Concentration": [
+        "50 nM"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "wild type"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell overexpressing ACE2"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "evidence": "Compared to Delta-treated 293T cells, Delta uptake into 293T-ACE cells remained almost unchanged, suggesting that Delta's cellular entry is less dependent on ACE2 than WT spike's"
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell overexpressing ACE2"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Additionally, neither spike protein affected cellular viability at the applied concentration of 50 nM (Supplementary Figure S3)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell",
+        "293T cell overexpressing ACE2"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "wild type"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cell Survival"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.D614G"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.D950N"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.L452R"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.P681R"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.R158G"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.T19R"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.T478K"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.del156EF157"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cell Survival"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "Concentration"
+      ]
+     },
+     {
+      "evidence": "Compared to 293T, increased ACE2 expression of 293T-ACE2 cells (i.e., ACE2 expression was about six times that of 293T cells) was associated with significantly lower (~80%) cell surface HS expression (Figure 2A,B,D,E)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell overexpressing ACE2"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "cell_surface_expression"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "These analyses revealed significantly decreased the expression of all four SDC isoforms (i.e., SDC1\u20134) in ACE2 overexpressing ACE2-293T cells (Figure 2C,F)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC2"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC3"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "Unlike DX600, which left the cellular uptake of the spike proteins unaffected, heparin reduced the WT and Delta spike uptake in 293T and 293T-ACE2 cells, as shown by data obtained with imaging flow cytometry (Figure 3A\u2013H)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell",
+        "293T cell overexpressing ACE2"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "wild type"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Concentration": [
+        "50 nM"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "DX600 peptide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparan sulfate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "DX600 peptide"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparan sulfate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Concentration"
+      ]
+     },
+     {
+      "evidence": "Heparin's effect on lowering the cellular uptake of Delta was slightly higher than on WT spike, suggesting the increased importance of polyanionic HS chains in the interactions with the more positively charged Delta spike (Figure 3A\u2013F,H)."
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "CHEBI",
+            "name": "heparan sulfate"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "On the other hand, heparin's effect on reducing the cellular uptake of WT spike into 293T-ACE2 cells was smaller than on 293T, showing that increased ACE2 expression leads to increased ACE2-dependent interactions with WT spike."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "293T cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "wild type"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparan sulfate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "ACE2"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "Compared to WT K562 cells lacking SDC1 and 4 (thus, WT K562 cells could be considered as SDC1 or SDC4 KO lines), SDC1 or SDC4 overexpression increased the cellular uptake of the WT spike and its Delta variant (Figure 4A\u2013C)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "K-562 cell overexpressing SDC"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "wild type"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "SDC overexpression further increased the internalization efficacy of the Delta spike, especially SDC4, which increased the difference between the cellular uptake of the WT spike and Delta the most (Figure 4C,D)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "K-562 cell overexpressing SDC"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparan sulfate"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "As shown in Supplementary Figure S7, neither the WT nor the Delta spike affected the viability after 4 h of incubation at the applied concentration"
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta",
+        "wild type"
+       ]
+      }
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K-562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "K-562 cell overexpressing SDC"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "causes_no_change"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cell Survival"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "evidence": "Namely, both SDC1 and SDC4 increased PSV-mediated gene (i.e., RFP transduction) either for the WT or Delta PSVs. However, the rate of SDC-mediated increase was higher for the Delta PSV (Figure 5A\u2013D)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "K-562 cell overexpressing SDC"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC1"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "The most efficient transduction was achieved with Delta PSV on SDC4 transfectants, showing that SDC4 enhances Delta cellular entry the most (Figure 5C,D)."
+     },
+     {
+      "set": {
+       "Custom_CellLine": [
+        "K-562 cell overexpressing SDC"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "CHEBI",
+           "name": "heparan sulfate"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "Custom_CellLine"
+      ]
+     },
+     {
+      "evidence": "Compared to WT SDC4, all structural mutants exhibited significantly decreased Delta spike internalization (Figure 6A\u2013C). Among them, Si4 demonstrated the highest decrease in Delta spike uptake, suggesting that simultaneous removal of SDC4's CBD and HS chains induces the most significant reduction in Delta spike entry."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K-562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.CBD_del"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.HSA_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.HSA_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.CBD_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "The significantly decreased Delta spike uptake into CBD and HSA mutants also shows that both the CBD and the polyanionic HS chains are involved in the attachment of Delta spike protein."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.HSA_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           },
+           [
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.D614G"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.D950N"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.L452R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.P681R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.R158G"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.T19R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.T478K"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.del156EF157"
+              }
+             ]
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.CBD_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "plasma membrane"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           },
+           [
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.D614G"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.D950N"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.L452R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.P681R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.R158G"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.T19R"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.T478K"
+              }
+             ]
+            ],
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.del156EF157"
+              }
+             ]
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "The cellular uptake of the Delta spike could be significantly reduced with either SDC4 knockdown(KD) or heparin co-incubation(Figure 9A-C)"
+     },
+     {
+      "set": {
+       "CellLine": [
+        "Calu-3 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "SARS_CoV2_Variant": [
+        "Delta"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparin"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Thus, a fold change of 0.6 in SDC4 expression exerted an uptake inhibition of about 34%, while heparin inhibited the Delta spike uptake with about 55% efficacy (Figure 9B)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparin"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "SDCK4 KD or heparin co-incubation also decreased the gene transduction efficacy of the Delta PSV. Namely, heparin inhibited the Delta PSV- mediated gene delivery with ~68% efficacy, compared to the ~44% inhibition efficacy of SDC4 KD (Figure 9C)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "process",
+         "name": "activity"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC4"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "heparin"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D614G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.D950N"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.L452R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.P681R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.R158G"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T19R"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.T478K"
+             }
+            ]
+           ],
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "variant"
+             }
+            },
+            [
+             {
+              "hgvs": "p.del156EF157"
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "SARS_CoV2_Variant"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

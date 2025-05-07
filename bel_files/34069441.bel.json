@@ -1,0 +1,2806 @@
+[
+ {
+  "document": {
+   "authors": "Aneetta Baby",
+   "contact_info": "aneetta@causalitybiomodels.com",
+   "copyright": "Copyright \u00a9 2024 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COMMUTE-WP4-BEL_curation",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "34069441.bel",
+   "version": "2.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "ADO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/alzheimer-disease-ontology/alzheimer-disease-ontology-1.0.2.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "BRCO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/brain-region-ontology/brain-region-ontology-1.0.0.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NIFT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/nift/NIFT.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HGNC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc/hgnc-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MGI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "RGD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-gene-families/hgnc-genefamily-names-20181221.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SCOMP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "SFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "HP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20190130.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DRUGBANK",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/drugbank/drugbank-20180906.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "INTERPRO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/interpro/interpro-names-20181021.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PFAM",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/pfam/pfam-names-20181024.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "DO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOBP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GOCC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHC",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHD",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-anatomy/mesh-anatomy-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHCS",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cellular-structures/mesh-cellular-structures-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCBIGENE",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-gene/ncbi-gene-20190224.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "COVID",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-covid19/ncbi-covid19-20200326.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "NCIT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncit/ncit-20200603.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESHPP",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20190128.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/uniprot/uniprot-20200601.belns",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Anatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Cell",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Disease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20200407.belns",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHAnatomy",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "MeSHDisease",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Species",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/bao/bao-20190130.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CovidAccession",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/ncbi-covid19/ncbi-accession-covid19-20200326.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Gender",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research",
+      "Review"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Preprint",
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Abstract",
+      "Full Text",
+      "Results"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Condition",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Heat-inactivated"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine_Type",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "ACE2-/-",
+      "SDC4-/-"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Int J Mol Sci. 2021 May 19;22(10):5336. doi:10.3390/ijms22105336.",
+       "ref": "34069441",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "Imaging flow cytometry analyses revealed increased uptake of SARS-CoV-2 into SDC transfectants (Figure 1A\u2013C)."
+     },
+     {
+      "set": {
+       "Species": [
+        "9606"
+       ]
+      }
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy",
+        "flow cytometry",
+        "transfection method"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Condition": [
+        "Heat-inactivated"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Among SDCs, SDC4 increased SARS-CoV-2 uptake the most (p < 0.01) (incubating the cells with the AF 488-labeled secondary antibodies did not result in any statistically significant difference in cellular fluorescence of applied WT K562 cells and SDC transfectants, showing that no unspecific binding influenced the detected difference in fluorescence intensities of SARS-CoV-2-treated cells (Supplementary Figure S4)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Condition"
+      ]
+     },
+     {
+      "evidence": "Treating WT K562 cells and SDC transfectants with the SARS-CoV-2 pseudovirus (SARS-CoV-2 PSV), a recombinant pseudotyped lentiviral particle carrying the SARS-CoV-2 spike protein and encoding the red fluorescent protein (RFP) as a reporter gene [29,66,67,68], delivered similar results as uptake studies with the heat-inactivated SARS-CoV-2."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy",
+        "flow cytometry",
+        "reporter gene assay",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Namely, SDC transfectants all increased SARS-CoV-2 PSV-mediated RFP transduction (Figure 1D\u2013F)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Compared to PSV-treated WT K562 cells, the increase in RFP transduction was significant (p < 0.05) only in the case of SDC4 transfectants (Figure 1F)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "PSV studies thus showed that besides facilitating SARS-CoV-2 uptake, SDC4-mediated cellular entry also maintains the biological activity (i.e., the gene transduction ability) of the virus."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "GO",
+         "name": "transduction"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Imaging flow cytometry revealed that both the HSA and CBD of SDC4 has a significant role in interacting with SARS-CoV-2 (Figure 3B\u2013D)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "fluorescence method"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Condition": [
+        "Heat-inactivated"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "HSA.pSi4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "TAX",
+            "name": "Severe acute respiratory syndrome coronavirus 2"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Namely, deleting both the CBD and the HSA with HS chains reduced cellular uptake of SARS-CoV-2, as shown by the markedly reduced intracellular fluorescence detected in Si4 mutants (Figure 3B\u2013D)."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           },
+           [
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.CBD_del"
+              }
+             ]
+            ]
+           ]
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           },
+           [
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "variant"
+              }
+             },
+             [
+              {
+               "hgvs": "p.HSA_del"
+              }
+             ]
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "?"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "However, the insignificant reduction in the cellular fluorescence of SARS-CoV-2-treated CBD mutants showed that the CBD plays an important role in interacting with the virus."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "CBD.pSi4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "TAX",
+            "name": "Severe acute respiratory syndrome coronavirus 2"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Overall, our studies with SDC4 deletion mutants revealed that besides the polyanionic HS chains, SARS-CoV-2 also interacts with the CBD of SDC4, highlighting the importance of the HS-independent parts of the SDC4 core protein (incubating the cells with the AF 633-labeled secondary antibodies did not induce any difference in fluorescence among the applied SDC4 transfectants and SDC4 mutants, showing that no unspecific binding influenced the difference in the detected fluorescence intensities in SARS-CoV-2-treated cells (Supplementary Figure S8))."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.HSA_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "association"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "abundance"
+           }
+          },
+          [
+           {
+            "namespace": "TAX",
+            "name": "Severe acute respiratory syndrome coronavirus 2"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Condition"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "The next steps showed that ACE2 and SDCs colocalize during SARS-CoV-2 uptake, suggesting that ACE2 and SDCs collaborate in mediating SARS-CoV-2 internalization (Figure 5C,D)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "A549 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy",
+        "flow cytometry",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "list",
+         "name": "composite"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "ACE2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "HGNC",
+           "name": "SDC1"
+          }
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Imaging flow cytometry analyses revealed increased uptake of spikeS1 into SDC lines (Figure 6A\u2013C)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "K 562 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "fluorescence method",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "fragment"
+             }
+            },
+            [
+             {
+              "range": "14_685",
+              "descriptor": ""
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Among SDCs, SDC4 significantly increased the uptake of spikeS1 (p < 0.01) (incubating the cells with the fluorescently labeled anti-His tag antibodies without spikeS1 pretreatment did not induce any difference in fluorescence among the applied K562 cells and SDC transfectants, showing that no unspecific binding influenced the detected fluorescence intensities in spikeS1-treated cells (Supplementary Figure S11))."
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "fragment"
+             }
+            },
+            [
+             {
+              "range": "14_685",
+              "descriptor": ""
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Namely, deleting both the CBD and the HSA (with HS chains) significantly reduced cellular uptake of spikeS1, as shown by the markedly reduced intracellular fluorescence detected on Si4 mutants (Figure 7A\u2013D)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy",
+        "flow cytometry",
+        "fluorescence method",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.CBD_del"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "variant"
+           }
+          },
+          [
+           {
+            "hgvs": "p.HSA_del"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "fragment"
+             }
+            },
+            [
+             {
+              "range": "14_685",
+              "descriptor": ""
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Increased SDC4 expression, with unaffected ACE2 levels, resulted in increased cellular uptake of spikeS1 (Figure 8C\u2013G). Namely, overexpression of SDC4 increased spikeS1 entry from a low level of WT A549 cells by almost twofold (Figure 8C\u2013E)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "A549 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "protein"
+          }
+         },
+         [
+          {
+           "namespace": "UNIPROT",
+           "name": "P0DTC2"
+          },
+          [
+           [
+            {
+             "function": {
+              "type": "modifier",
+              "name": "fragment"
+             }
+            },
+            [
+             {
+              "range": "14_685",
+              "descriptor": ""
+             }
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Colocalization studies revealed that spikeS1 colocalizes with SDC4 during increased spikeS1 entry (as shown by the high BDS, MOC and PCC scores obtained with imaging flow cytometry and confocal microscopy (see details in Figure 8F,G), while co-immunoprecipitation showed increased binding of spikeS1 to SDC4 due to SDC4 overexpression (Figure 8H) (incubating the cells with the fluorescently labeled anti-His tag antibodies without spikeS1 pretreatment did not induce any difference in fluorescence among the applied A549 cell line and SDC4 transfectants, showing that no unspecific binding influenced the detected fluorescence intensities in spikeS1-treated cells (Supplementary Figure S15))."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "confocal microscopy",
+        "flow cytometry",
+        "fluorescence method",
+        "immunoprecipitation",
+        "transfection method",
+        "western blot"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "list",
+         "name": "complex"
+        }
+       },
+       [
+        [
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "HGNC",
+            "name": "SDC4"
+           }
+          ]
+         ],
+         [
+          {
+           "function": {
+            "type": "abundance",
+            "name": "protein"
+           }
+          },
+          [
+           {
+            "namespace": "UNIPROT",
+            "name": "P0DTC2"
+           },
+           [
+            [
+             {
+              "function": {
+               "type": "modifier",
+               "name": "fragment"
+              }
+             },
+             [
+              {
+               "range": "14_685",
+               "descriptor": ""
+              }
+             ]
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "As shown in Figure 9A\u2013C, uptake studies demonstrated that while all of the applied inhibitors efficiently reduced SARS-CoV-2 uptake, SPRRAR, a peptide derived from the spikeS1 of SARS-CoV-2 emerged as the most potent one, demonstrating that molecularly detailed understanding of the SARS-CoV-2 internalization could indeed lead to the rational development of potent SARS-CoV-2 therapeutic leads (preincubating the cells with the inhibitors did not influence cell viability, demonstrating that the reduced SARS-CoV-2 uptake due to inhibitor treatment did not arise from disturbed cellular viability (Supplementary Figure S16))."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "fluorescence method",
+        "transfection method"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "UNIPROT",
+         "name": "P0DTC2"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "fragment"
+           }
+          },
+          [
+           {
+            "range": "680_685",
+            "descriptor": ""
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "evidence": "Compared to WT A549 cells, SARS-CoV-2 treatment of ACE2 and SDC4 KO cells resulted in significantly reduced virus uptake (Figure 10C,D,F)."
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "flow cytometry",
+        "fluorescence method",
+        "transfection method"
+       ]
+      }
+     },
+     {
+      "set": {
+       "CellLine_Type": [
+        "ACE2-/-"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine_Type"
+      ]
+     },
+     {
+      "set": {
+       "CellLine_Type": [
+        "SDC4-/-"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine_Type"
+      ]
+     },
+     {
+      "evidence": "Compared to ACE2 knockdown, the effect of SDC4 KO exerted a significantly (p < 0.01) more pronounced inhibitory effect on SARS-CoV-2 internalization (Figure 10D,F), suggesting a substantial role is played by SDC4 in SARS-CoV-2 uptake."
+     },
+     {
+      "set": {
+       "CellLine_Type": [
+        "ACE2-/-"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "ACE2"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine_Type"
+      ]
+     },
+     {
+      "set": {
+       "CellLine_Type": [
+        "SDC4-/-"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "protein"
+        }
+       },
+       [
+        {
+         "namespace": "HGNC",
+         "name": "SDC4"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "increases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "transformation",
+         "name": "translocation"
+        }
+       },
+       [
+        [
+         {
+          "function": {
+           "type": "abundance",
+           "name": "abundance"
+          }
+         },
+         [
+          {
+           "namespace": "TAX",
+           "name": "Severe acute respiratory syndrome coronavirus 2"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "from_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "extracellular region"
+          }
+         ]
+        ],
+        [
+         {
+          "function": {
+           "type": "translocation",
+           "name": "to_location"
+          }
+         },
+         [
+          {
+           "namespace": "GO",
+           "name": "intracellular"
+          }
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine_Type"
+      ]
+     },
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "unset": [
+       "Species"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     },
+     {
+      "unset": [
+       "Citation"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
