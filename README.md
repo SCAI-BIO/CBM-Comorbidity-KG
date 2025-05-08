@@ -11,6 +11,17 @@ a manually curated, comorbidity-centric, cause-and-effect knowledge graph that s
   
 - Each relationship in the graph is fully traceable, supported by evidence statements from the source literature to ensure transparency and reproducibility.
   
-- As a significant outcome of the collaboration within the EU-funded COMMUTE project (www.commute-project.eu), the CBM KG is publicly accessible for querying, hypothesis generation, and functional interpretation of experimental data aimed at unraveling the molecular and cellular basis of the putative comorbidity between COVID-19 and neurodegenerative diseases. 
+- As a significant outcome of the collaboration within the EU-funded COMMUTE project (www.commute-project.eu), the CBM KG is publicly accessible for querying, hypothesis generation, and functional interpretation of experimental data aimed at unraveling the molecular and cellular basis of the putative comorbidity between COVID-19 and neurodegenerative diseases.
+
+![WP2_KG_figure](https://github.com/user-attachments/assets/723f34f8-0f54-4670-af44-9d50a2b5267b)
+
+## Repository Contents
+
+- `bel_files/`: Contains `.bel` and `.json` files for each publication in the corpus, detailing the curated relationships.
+- `cbm-kg_shared-mechanisms/`: Includes `.cypher` and `.graphml` files representing shared disease mechanisms.
+- `CBM_Comorbidity_KG.cys`: Cytoscape session file for visualizing the knowledge graph and shared mechanisms.
+- `cbm-kg-070425.cypher`: Cypher file containing the graph structure and data for the CBM Knowledge Graph.
+- `pmid.csv`: List of PubMed IDs corresponding to the curated literature sources.
+- `README.md`: This documentation file.
 
 
