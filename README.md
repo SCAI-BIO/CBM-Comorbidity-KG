@@ -24,4 +24,19 @@ a manually curated, comorbidity-centric, cause-and-effect knowledge graph that s
 - `pmid.csv`: List of PubMed IDs corresponding to the curated literature sources.
 - `README.md`: This documentation file.
 
+## Getting Started
+
+To explore the knowledge graph:
+
+1. **Visualize with Cytoscape:**
+   - Install [Cytoscape](https://cytoscape.org/) (version 3.10.2 or later).
+   - Launch Cytoscape and open the `CBM_Comorbidity_KG.cys` session file by by navigating to **File -> Open Session**.
+2. **Import into Neo4j:**
+   - Install [Neo4j](https://neo4j.com/).
+   - Execute the following command to import the `cbm-kg-070425.cypher` file:
+     ```bash
+     /path/to/neo4j/bin/cypher-shell -u <username> -p <password> -d <database> -f path/to/cbm-kg-070425.cypher
+     ```
+     For more information on using `cypher-shell`, refer to the [Neo4j Cypher Shell documentation](https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/).
+
 
