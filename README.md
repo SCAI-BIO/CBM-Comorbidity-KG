@@ -11,7 +11,7 @@ a manually curated, comorbidity-centric, cause-and-effect knowledge graph that s
   
 - Each relationship in the graph is fully traceable, supported by evidence statements from the source literature to ensure transparency and reproducibility.
   
-- As a significant outcome of the collaboration within the EU-funded COMMUTE project (www.commute-project.eu), the CBM KG is publicly accessible for querying, hypothesis generation, and functional interpretation of experimental data aimed at unraveling the molecular and cellular basis of the putative comorbidity between COVID-19 and neurodegenerative diseases.
+- As a significant outcome of the collaboration within the EU-funded COMMUTE project (www.commute-project.eu), the CBM KG is publicly accessible for querying, extension, hypothesis generation, and functional interpretation of experimental data aimed at unraveling the molecular and cellular basis of the putative comorbidity between COVID-19 and neurodegenerative diseases.
 
 ![WP2_KG_figure](https://github.com/user-attachments/assets/723f34f8-0f54-4670-af44-9d50a2b5267b)
 
